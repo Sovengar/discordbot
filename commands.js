@@ -10,7 +10,7 @@ const choochoo = require('./commands/choochoo.js');
 const commands = { choochoo, gif };
 
 module.exports = async function(msg) {
-  if (msg.channel.id == '715786219770085396') {
+  if (msg.channel.id == '314720200337522688') {
     let tokens = msg.content.split(' ');
     let command = tokens.shift();
     if (command.charAt(0) === '!') {
