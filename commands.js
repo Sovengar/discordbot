@@ -19,3 +19,15 @@ module.exports = async function(msg) {
     }
   }
 };
+
+//Necesitamos mantener el host activo, lo haremos en 2 pasos:
+
+//Paso 1, levantamos un server en el puerto especifico.
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end('ok');
+});
+server.listen(3000);
+
+//Paso 2, hacemos pings a ese server.
