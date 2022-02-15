@@ -10,6 +10,8 @@ member join position
 antijoin
 afk
 emojify
+mute voice
+trivia
 
 POR HACER EN MESSAGE:
 giveaway,   mute,unmute, timeout 

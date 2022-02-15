@@ -4,7 +4,7 @@ const GuildSettings = require("../../../models/GuildSettings");
 
 module.exports = {
     name: "mute",
-    description: "Mutes a member",
+    description: "Mutes a member (unable to chat and talk)",
     //UserPerms: ['MANAGE_MESSAGES'],
     //BotPerms: ['MANAGE_ROLES'],
     permissions: "MANAGE_ROLES",

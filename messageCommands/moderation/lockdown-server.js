@@ -3,7 +3,7 @@ const { Message, Client, MessageEmbed} = require("discord.js");
 module.exports = {
     name: "lockdown",
     aliases : ['lockdown'],
-    description: "Locks down any user who is not an admin on any channel",
+    description: "Desactivates chatting in the server!",
     userPermissions: ["ADMINISTRATOR",],
     botPermissions: ["ADMINISTRATOR",],
     cooldown: 5,
