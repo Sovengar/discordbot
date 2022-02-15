@@ -1,0 +1,41 @@
+POR HACER EN SLASHCOMMANDS O CONTEXTMENU:
+playlocal
+setup folder,   rank,top,   eadd,ebal,ermv,   ticket, suggestion, announce(no se puede),    reactionx3, 
+command-enable/disable
+lockdown, slowmode, ban-list, nuke
+emoji-steal
+slap
+user roles
+member join position
+antijoin
+afk
+emojify
+
+POR HACER EN MESSAGE:
+giveaway,   mute,unmute, timeout 
+
+POR HACER EN AMBOS:
+loopqueue, clearqueue, shuffle, skip?
+
+Remindme
+Rock Paper Scissors with the bot.
+Flip a coin.
+poll Start a poll (max 5 choices)
+?poll [message] "[choice1]" "[choice2]"
+poll show
+?poll poll show [message ID/link]
+
+MEJORAR:
+Hay que revisar migrar los comandos de 1 guild a todas.
+Con solo poner el nombre del comando, si lleva argumentos, que devuelva el formato en vez de decirte que hagas help
+
+Probar a meter deferReply dentro del comando help para cuando expire no salte error al haber cerrado ya el interaction.
+
+
+
+
+PERMISOS:
+Los permisos para interaction commands se gestionan con .permissions ya que no veo como implementarlo con doble permissions.
+*Desde los ficheros interaction Handler y interaction event.
+Los permisos para message commands se gestionan con user y bot permissions.
+*Desde el fichero message event.

@@ -1,0 +1,3563 @@
+{
+    "name": "---------",
+    "verificationLevel": "NONE",
+    "explicitContentFilter": "DISABLED",
+    "defaultMessageNotifications": "ALL_MESSAGES",
+    "afk": null,
+    "widget": {
+        "channel": null
+    },
+    "channels": {
+        "categories": [],
+        "others": [
+            {
+                "type": "GUILD_TEXT",
+                "name": "general",
+                "nsfw": false,
+                "rateLimitPerUser": 0,
+                "parent": null,
+                "topic": null,
+                "permissions": [
+                    {
+                        "roleName": "@everyone",
+                        "allow": "805829713",
+                        "deny": "0"
+                    }
+                ],
+                "messages": [
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "You can only choose among `create` / `load` / `info` / `delete`",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "You can only choose among `create` / `load` / `info` / `delete`",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "You can only choose among `create` / `load` / `info` / `delete`",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "You can only choose among `create` / `load` / `info` / `delete`",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "You can only choose among `create` / `load` / `info` / `delete`",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "You can only choose among `create` / `load` / `info` / `delete`",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "eeeasdasds",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "sdaasd",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "d",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "asd",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "as",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "hola",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "hola. By @​moco",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Tell the bot what to say, my god!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": "<@!804737051995537468>",
+                                "url": null,
+                                "timestamp": "2022-02-07T00:03:06.090Z",
+                                "color": 16777215,
+                                "fields": [
+                                    {
+                                        "name": "Joined",
+                                        "value": "29/1/2021",
+                                        "inline": true
+                                    },
+                                    {
+                                        "name": "Registered",
+                                        "value": "29/1/2021",
+                                        "inline": true
+                                    },
+                                    {
+                                        "name": "Roles[1]",
+                                        "value": "<@&937478986878042242>",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "Server",
+                                        "value": "---------",
+                                        "inline": true
+                                    },
+                                    {
+                                        "name": "Bot",
+                                        "value": "Yes",
+                                        "inline": true
+                                    },
+                                    {
+                                        "name": "Nickname",
+                                        "value": "None",
+                                        "inline": true
+                                    },
+                                    {
+                                        "name": "Voice Channel",
+                                        "value": "Not in a VC",
+                                        "inline": true
+                                    }
+                                ],
+                                "thumbnail": {
+                                    "url": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp?size=256",
+                                    "proxyURL": "https://images-ext-1.discordapp.net/external/oack-uKhZwXh5xy7OvImEPjsO32XRJzC54frVHvoZ8I/%3Fsize%3D256/https/cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                                    "height": 256,
+                                    "width": 256
+                                },
+                                "image": null,
+                                "author": {
+                                    "name": "C Bot#3955",
+                                    "icon_url": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp"
+                                },
+                                "footer": {
+                                    "text": "ID: 804737051995537468"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": "User from server ---------\n\n      ID: 215143420312682498",
+                                "url": null,
+                                "timestamp": "2022-02-07T00:03:05.396Z",
+                                "color": 39423,
+                                "fields": [
+                                    {
+                                        "name": "Roles:",
+                                        "value": "Admin,new roledsffdsfsd,@everyone",
+                                        "inline": true
+                                    }
+                                ],
+                                "thumbnail": {
+                                    "url": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp?size=256",
+                                    "proxyURL": "https://images-ext-1.discordapp.net/external/5QDvJv-EqeIzjXrurw7fTlA0Echw0GKtGZtrPa3AgoI/%3Fsize%3D256/https/cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                                    "height": 256,
+                                    "width": 256
+                                },
+                                "image": {
+                                    "url": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp?size=256",
+                                    "proxyURL": "https://images-ext-1.discordapp.net/external/5QDvJv-EqeIzjXrurw7fTlA0Echw0GKtGZtrPa3AgoI/%3Fsize%3D256/https/cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                                    "height": 256,
+                                    "width": 256
+                                },
+                                "author": {
+                                    "name": "C ♿#5549"
+                                },
+                                "footer": {
+                                    "text": "C ♿"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!profile @​C Bot",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "You pinged me. Listen buddy, my prefix is ! or / if you prefer.",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "@​C Bot",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "@​C Bot",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "@​C Bot",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "hola. By @​moco",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "hola -@​moco",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "hola -@​moco",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "hola -@​moco",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "hola -@​moco",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "hola, or at least that's what @​moco thinks!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "!talkforme hola, or at least that's what @​moco thinks!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!talkforme hola",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!talkforme hola",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": null,
+                                "url": null,
+                                "timestamp": null,
+                                "color": 16711680,
+                                "fields": [
+                                    {
+                                        "name": "Backup ID",
+                                        "value": "940029585934909440",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "Server ID",
+                                        "value": "314720200337522688",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "Size",
+                                        "value": "210.53 kb",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "Created at",
+                                        "value": "2022/02/07",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": {
+                                    "name": "Backup Informations"
+                                },
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!backup info 940029585934909440",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Please provide a backup ID",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!backup info",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": "❌ - You need `ADMINISTRATOR` permission(s) to execute this command!",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 4011468,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "Sovengaar",
+                        "avatar": "https://cdn.discordapp.com/embed/avatars/4.png",
+                        "content": "!backup",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Backup Successful",
+                                "type": "rich",
+                                "description": "Backup has successfully been create. Use `backup load 940029585934909440` to load the backup, or use `backup delete 940029585934909440` to delete the data.",
+                                "url": null,
+                                "timestamp": "2022-02-06T23:41:59.467Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Backup by Drago"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!backup create",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Backup Successful",
+                                "type": "rich",
+                                "description": "Backup has successfully been create. Use `backup load 940029251216867328` to load the backup, or use `backup delete 940029251216867328` to delete the data.",
+                                "url": null,
+                                "timestamp": "2022-02-06T23:40:39.650Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Backup by Drago"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!backup create",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "You can only choose among `create` / `load` / `info` / `delete`",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!backup",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!backup",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!backup",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "Sovengaar",
+                        "avatar": "https://cdn.discordapp.com/embed/avatars/4.png",
+                        "content": "!backup",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "Sovengaar",
+                        "avatar": "https://cdn.discordapp.com/embed/avatars/4.png",
+                        "content": "!backup",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Simulated leave event",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!simleave",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "This command is classified!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!simleave",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "This command is classified!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "Sovengaar",
+                        "avatar": "https://cdn.discordapp.com/embed/avatars/4.png",
+                        "content": "!simjoin",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Simulated join event",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!simjoin",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "/Mathew\\",
+                        "avatar": "https://cdn.discordapp.com/avatars/215213845830959107/5057751fa1ba8e8c26db100d42c0b66d.webp",
+                        "content": "https://www.twitch.tv/s4vitaar",
+                        "embeds": [
+                            {
+                                "title": "S4vitaar - Twitch",
+                                "type": "rich",
+                                "description": "Hacking y Ciberseguridad | CIBERCONSULTORIO CON S4VITAR !comoempiezo",
+                                "url": "https://www.twitch.tv/s4vitaar",
+                                "timestamp": null,
+                                "color": null,
+                                "fields": [],
+                                "thumbnail": {
+                                    "url": "https://static-cdn.jtvnw.net/jtv_user_pictures/471be3af-c74c-470b-8000-88b93be70e7c-profile_image-300x300.png",
+                                    "proxyURL": "https://images-ext-2.discordapp.net/external/iGGuLVXSJbHwGZmPZ14s78kn_-VlMcjJnpxWtr-gv30/https/static-cdn.jtvnw.net/jtv_user_pictures/471be3af-c74c-470b-8000-88b93be70e7c-profile_image-300x300.png",
+                                    "height": 300,
+                                    "width": 300
+                                },
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Song Queue",
+                                "type": "rich",
+                                "description": "1. [**Coquetea**](https://www.youtube.com/watch?v=5hYjvFvHS30) - C ♿#5549\n2. [**Dame Una Noche**](https://www.youtube.com/watch?v=1cRCUJodXeQ) - C ♿#5549\n3. [**Donde Los Consigo?**](https://www.youtube.com/watch?v=GcifLK4qWxY) - C ♿#5549\n4. [**El Matadero**](https://www.youtube.com/watch?v=Wz7IGDtlEuw) - C ♿#5549\n5. [**Fanatica Sensual**](https://www.youtube.com/watch?v=4oxWnLQZnpk) - C ♿#5549\n6. [**Fronteo**](https://www.youtube.com/watch?v=PNQADgl1o4U) - C ♿#5549\n7. [**Juegas Con Mi Mente**](https://www.youtube.com/watch?v=gAH5f7_Xd_A) - C ♿#5549\n8. [**Love and Sex**](https://www.youtube.com/watch?v=fmy2LHSCGA4) - C ♿#5549\n9. [**No Quiero Que Te Vayas**](https://www.youtube.com/watch?v=QQOF_gPJ_jg) - C ♿#5549\n10. [**Pa'l Piso**](https://www.youtube.com/watch?v=0bMEdEy-yL0) - C ♿#5549\n...3 more tracks",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 11003830,
+                                "fields": [
+                                    {
+                                        "name": "Now Playing",
+                                        "value": "🎶 | [**Choca**](https://www.youtube.com/watch?v=e19gXpuRygM) - C ♿#5549",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Playing https://music.youtube.com/playlist?list=OLAK5uy_k0UBxr2pGN4MWY_m_t5PnfWwDvSGyw_MA",
+                        "embeds": [
+                            {
+                                "title": "Love and Sex",
+                                "type": "rich",
+                                "description": "Love & Sex is the third and final studio album by reggaeton duo Plan B. It was released on August 25, 2014 through Sony Music Latin and Pina Records. It features four singles: the lead, \"Zapatito Roto\", \"Candy\", \"Mi Vecinita\" and \"Fanática Sensual\". On September 27, 2014, the album reached the #2 position on the US Billboard Top Latin Albums cha...",
+                                "url": "https://music.youtube.com/playlist?list=OLAK5uy_k0UBxr2pGN4MWY_m_t5PnfWwDvSGyw_MA",
+                                "timestamp": null,
+                                "color": null,
+                                "fields": [],
+                                "thumbnail": {
+                                    "url": "https://lh3.googleusercontent.com/dHWd7StDliFPEys6fxHW0TXPe3jjnfmYiNDQNglSpFg6zAYn_Kl_I294mzPa64N-ON447bckVdZFZw4=w544-h544-l90-rj",
+                                    "proxyURL": "https://images-ext-2.discordapp.net/external/tviFJIAIywxPRs_2-66i-YWdgneJOgpxAPlaoU61yVY/https/lh3.googleusercontent.com/dHWd7StDliFPEys6fxHW0TXPe3jjnfmYiNDQNglSpFg6zAYn_Kl_I294mzPa64N-ON447bckVdZFZw4%3Dw544-h544-l90-rj",
+                                    "height": 544,
+                                    "width": 544
+                                },
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Volume has been set to `100%`",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Playing https://www.youtube.com/watch?v=62H0y5DQyyc",
+                        "embeds": [
+                            {
+                                "title": "Reggaeton Old School Mix - Farruko/Daddy Yanke/ Ñengo Flow/Arcangel",
+                                "type": "rich",
+                                "description": "Duro.",
+                                "url": "https://www.youtube.com/watch?v=62H0y5DQyyc",
+                                "timestamp": null,
+                                "color": 16711680,
+                                "fields": [],
+                                "thumbnail": {
+                                    "url": "https://i.ytimg.com/vi/62H0y5DQyyc/maxresdefault.jpg",
+                                    "proxyURL": "https://images-ext-1.discordapp.net/external/06buZb9Ib4_RJKGn3krM_s7-AbAV0_HoIYgKmremxxI/https/i.ytimg.com/vi/62H0y5DQyyc/maxresdefault.jpg",
+                                    "height": 720,
+                                    "width": 1280
+                                },
+                                "image": null,
+                                "author": {
+                                    "name": "Balta Rose",
+                                    "url": "https://www.youtube.com/channel/UC1fFsMJ47pY-L9BiN2gtK1w"
+                                },
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": "❌ - Please wait `3.0` more seconds before using `test`!",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!!!!!!!!!!!!!!!!!!!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Playing now!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Playing now!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!test",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Playing now!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    }
+                ],
+                "isNews": false,
+                "threads": []
+            },
+            {
+                "type": "GUILD_VOICE",
+                "name": "General",
+                "bitrate": 64000,
+                "userLimit": 0,
+                "parent": null,
+                "permissions": []
+            },
+            {
+                "type": "GUILD_TEXT",
+                "name": "error-logs",
+                "nsfw": false,
+                "rateLimitPerUser": 0,
+                "parent": null,
+                "topic": null,
+                "permissions": [
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "1024"
+                    },
+                    {
+                        "roleName": "Admin",
+                        "allow": "1024",
+                        "deny": "0"
+                    }
+                ],
+                "messages": [
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n23.options[0].description: This field is required\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-07T00:29:49.547Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n23.options[0].description: This field is required\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-07T00:28:58.320Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: interaction.delete is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-07T00:16:14.844Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n5.options[0].type: This field is required\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-07T00:10:21.973Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: message.content.shift is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T23:54:15.219Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: Cannot read properties of undefined (reading 'channel')\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T23:52:11.907Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: Cannot read properties of undefined (reading 'send')\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T23:51:15.211Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: command.run is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T23:39:54.625Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nError: Cannot perform IP discovery - socket closed```",
+                                "url": null,
+                                "timestamp": "2022-02-06T23:00:31.855Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T22:06:48.483Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T22:06:48.477Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nError: Cannot perform IP discovery - socket closed```",
+                                "url": null,
+                                "timestamp": "2022-02-06T22:06:28.028Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T22:02:26.373Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:44:20.840Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:44:19.484Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:43:11.298Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:43:09.897Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:39:00.136Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:38:58.645Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:34:02.533Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:34:01.512Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:33:31.873Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:33:30.731Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nFetchError: request to https://discord.com/api/v9/channels/939370739486822441/messages failed, reason: socket hang up```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:32:39.963Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:32:26.044Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:32:24.940Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:32:24.940Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```ReferenceError: getNextResource is not defined\n\nuncaughtException```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:31:54.849Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```ReferenceError: getNextResource is not defined\n\nuncaughtException```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:31:54.846Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:31:54.713Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:31:53.687Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:25:40.620Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:25:39.192Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nError: Cannot perform IP discovery - socket closed```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:20:02.201Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```Error [VOICE_NOT_STAGE_CHANNEL]: You are only allowed to do this in stage channels.\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T21:05:34.417Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:51:34.753Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:50:15.463Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:48:09.156Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:47:13.411Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:46:49.853Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:44:47.379Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:43:28.435Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:41:52.300Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:41:02.696Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:39:25.781Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:37:30.689Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: joinVoiceChannel(...).then is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:24:53.654Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: channel.join is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:23:56.894Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: channel.join is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:21:40.369Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: client.channels.get is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:20:31.913Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: client.channels.get is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:20:25.465Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: voiceChannel.join is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:16:33.277Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: voiceChannel.join is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:14:34.850Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```ReferenceError: msg is not defined\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T20:14:12.775Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T19:05:31.810Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T19:05:31.803Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```ReferenceError: Collection is not defined\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T19:04:50.073Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Unknown interaction\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T18:48:52.799Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```ReferenceError: message is not defined\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T18:37:26.819Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n18.options[0].description: This field is required\n18.options[0].name: This field is required\n18.options[0].type: This field is required\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T18:35:39.041Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n18.options[0].description: This field is required\n18.options[0].name: This field is required\n18.options[0].type: This field is required\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T18:35:30.958Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: interaction2.edit is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:34:32.433Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: interaction.edit is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:33:44.594Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: interaction.update is not a function\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:31:37.469Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: Cannot read properties of undefined (reading 'id')\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:30:12.162Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: Cannot read properties of undefined (reading 'id')\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:30:07.789Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: Cannot read properties of undefined (reading 'id')\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:30:02.980Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: Cannot read properties of undefined (reading '0')\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:28:00.739Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: Cannot read properties of undefined (reading '0')\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:24:14.909Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: Cannot read properties of undefined (reading '0')\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:22:44.457Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: Cannot read properties of undefined (reading '0')\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:20:20.645Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: Cannot read properties of undefined (reading '0')\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:17:58.560Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```ReferenceError: message is not defined\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:11:54.781Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```ReferenceError: message is not defined\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:11:24.321Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n19.options[1].description: This field is required\n19.options[1].name: This field is required\n19.options[1].type: This field is required\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:07:48.102Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n19.options[0].description: This field is required\n19.options[0].name: This field is required\n19.options[0].type: This field is required\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T17:07:29.044Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```ReferenceError: message is not defined\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:56:19.415Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n14: Application command names are unique\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:38:28.407Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n13: Application command names are unique\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:38:22.464Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n11: Application command names are unique\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:37:19.707Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n7: Application command names are unique\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:36:28.882Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n7: Application command names are unique\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:36:19.442Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n6: Application command names are unique\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:35:38.379Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n6: Application command names are unique\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:35:16.811Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n6: Application command names are unique\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:34:38.623Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```DiscordAPIError: Invalid Form Body\n6: Application command names are unique\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:34:12.999Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```TypeError: Cannot read properties of undefined (reading 'type')\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:22:35.761Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```RangeError [EMBED_FIELD_VALUE]: MessageEmbed field values must be non-empty strings.\n\n[object Promise]```",
+                                "url": null,
+                                "timestamp": "2022-02-06T16:05:59.532Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nError: Cannot perform IP discovery - socket closed```",
+                                "url": null,
+                                "timestamp": "2022-02-06T15:55:26.660Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T15:51:49.222Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T15:51:49.213Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T15:47:57.572Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T15:47:57.561Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T15:23:48.253Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "⚠ New Error",
+                                "type": "rich",
+                                "description": "An error just occured in the bot console!**\n\nERROR:\n\n** ```reject\n\n[object Promise]\n\nAbortError: The operation was aborted```",
+                                "url": null,
+                                "timestamp": "2022-02-06T15:23:48.247Z",
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Anti-Crash System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Playing hola",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "Please join a voice channel first!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "✅ - Well, this is the current ping! 🏓",
+                        "embeds": [
+                            {
+                                "title": "⌚ Pong!",
+                                "type": "rich",
+                                "description": null,
+                                "url": null,
+                                "timestamp": "2022-02-06T15:19:23.838Z",
+                                "color": 15548997,
+                                "fields": [
+                                    {
+                                        "name": "Bot Latency 🤖:",
+                                        "value": "255",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "API Latency 🦾:",
+                                        "value": "135",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C Bot",
+                        "avatar": "https://cdn.discordapp.com/avatars/804737051995537468/94ef140b2b724c5cf969fe969057ea8b.webp",
+                        "content": "✅ - Well, this is the current ping! 🏓",
+                        "embeds": [
+                            {
+                                "title": "⌚ Pong!",
+                                "type": "rich",
+                                "description": null,
+                                "url": null,
+                                "timestamp": "2022-02-06T15:19:20.027Z",
+                                "color": 15548997,
+                                "fields": [
+                                    {
+                                        "name": "Bot Latency 🤖:",
+                                        "value": "255",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "API Latency 🦾:",
+                                        "value": "135",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "C ♿",
+                        "avatar": "https://cdn.discordapp.com/avatars/215143420312682498/dd9dc55c487a722df0127f162108fb0f.webp",
+                        "content": "!ping",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    }
+                ],
+                "isNews": false,
+                "threads": []
+            },
+            {
+                "type": "GUILD_VOICE",
+                "name": "aaa",
+                "bitrate": 64000,
+                "userLimit": 0,
+                "parent": null,
+                "permissions": []
+            }
+        ]
+    },
+    "roles": [
+        {
+            "name": "Admin",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "2190403436287",
+            "mentionable": false,
+            "position": 3,
+            "isEveryone": false
+        },
+        {
+            "name": "new roledsffdsfsd",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "1071698665025",
+            "mentionable": false,
+            "position": 2,
+            "isEveryone": false
+        },
+        {
+            "name": "new role",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "1071698665025",
+            "mentionable": false,
+            "position": 1,
+            "isEveryone": false
+        },
+        {
+            "name": "@everyone",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "1071698665025",
+            "mentionable": false,
+            "position": 0,
+            "isEveryone": true
+        }
+    ],
+    "bans": [],
+    "emojis": [
+        {
+            "name": "p_",
+            "url": "https://cdn.discordapp.com/emojis/619220650162126859.png"
+        }
+    ],
+    "createdTimestamp": 1644193908972,
+    "guildID": "314720200337522688",
+    "id": "940042130175426560"
+}
