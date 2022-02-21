@@ -2,6 +2,7 @@ const { Message, Client, MessageEmbed,} = require("discord.js");
 const { Permissions } = require("discord.js");
 const GuildSettings = require("../../models/GuildSettings");
 const client = require('../../client/discordBot')
+const { antijoin } = require('../../collections/index')
 
 module.exports = {
 	name : 'setup',
@@ -22,7 +23,7 @@ module.exports = {
 		
         if(!guildSettings){
             guildSettings = new GuildSettings({
-                guild_id: interaction.guild.id,
+                guild_id: message.guild.id,
                 prefix: process.env.PREFIX,
             })
             await guildSettings.save()
@@ -44,9 +45,12 @@ module.exports = {
             .addField("🤐 Logs feature", `\`${guildSettings.allowLogChannel ? '🟢 (ON)' : '🔴 (OFF)'}\``, true)
             .addField("🙋‍♂️ Suggestion feature", `\`${guildSettings.allowSuggestion ? '🟢 (ON)' : '🔴 (OFF)'}\``, true)
             .addField("👾 Leveling feature", `\`${guildSettings.allowLeveling ? '🟢 (ON)' : '🔴 (OFF)'}\``, true)
-            .addField("🤬 Anticurse feature", `\`${guildSettings.allowAnticurse ? '🟢 (ON)' : '🔴 (OFF)'}\``, true)
             .addField("🧬 Antilink feature", `\`${guildSettings.allowAntilink ? '🟢 (ON)' : '🔴 (OFF)'}\``, true)
             .addField("🧬 Anti advertising feature", `\`${guildSettings.allowAntiAdvertising ? '🟢 (ON)' : '🔴 (OFF)'}\``, true)
+            .addField("👩‍👩‍👧‍👦 Anti join (Anti raid)", `\`${antijoin.get(message.guild.id) ? '🟢 (ON)' : '🔴 (OFF)'}\``, true)
+            .addField("🤬 Anti curse feature", `\`${guildSettings.allowAnticurse ? '🟢 (ON)' : '🔴 (OFF)'}\``, true)
+            .addField("👩‍👩‍👧‍👦 Anti blacklist members", `\`${guildSettings.allowAntiBL_members ? '🟢 (ON)' : '🔴 (OFF)'}\``, true)
+            .addField("👨‍💻 Anti blacklist classic commands", `\`${guildSettings.allowAntiBL_messageCommands ? '🟢 (ON)' : '🔴 (OFF)'}\``, true)
 
             .addField('\u200B', "__Channels__")
             .addField("👨‍👩‍👧 Welcome channel", `${guildSettings.welcomeChannelId ? `<#${guildSettings.welcomeChannelId}>` : "`No Channel Set`"}`, true)
@@ -62,33 +66,7 @@ module.exports = {
                 : '[Default Image](https://cdn.discordapp.com/attachments/850306937051414561/877186344965783614/WallpaperDog-16344.jpg)'
             }`, true)
             .addField("👨‍👩‍👧 Welcome Message", `${guildSettings.welcomeMessage ? `Custom Message` : "`Default Message`"}`, true)
-            .addField("🤬 Banned words", `${
-                guildSettings.bannedWords.length !== 0 
-                ? `${Object.entries(guildSettings.bannedWords).map( (value, index) => { 
-                    return `**${value[1][0].toUpperCase() + value[1].slice(1)}**`
-                }).join(", ")}`    
-                : "`No banned words`"
-            }`, true)
-            .addField("👨‍💻 Classsic commands disabled", `${
-                guildSettings.disabledMessageCommands.length !== 0 
-                ? `**${guildSettings.disabledMessageCommands}**`
-                : "`No commands disabled`"
-            }`, true)
 
-        let antilinkchannelsEmbed = new MessageEmbed()
-            .setColor("RED")
-            .setTitle(`🧬 __Antilink channels__`)
-            guildSettings.antiLinkChannels.length !== 0 
-                ? guildSettings.antiLinkChannels.forEach(element =>  antilinkchannelsEmbed.addField(`\u200B`, `<#${element}>`, true))
-                : antilinkchannelsEmbed.addField("`No antilink channels `", "\u200B")
-
-        let disabledLevelingChannelsEmbed = new MessageEmbed()
-            .setColor("RED")
-            .setTitle(`👾 __Leveling disabled channels__`)
-            guildSettings.disabledLevelingChannels.length !== 0 
-                ? guildSettings.disabledLevelingChannels.forEach(element =>  disabledLevelingChannelsEmbed.addField(`\u200B`, `<#${element}>`, true))
-                : disabledLevelingChannelsEmbed.addField("`No channels disabled`", "\u200B")
-
-        message.channel.send({ embeds: [setupEmbed, antilinkchannelsEmbed, disabledLevelingChannelsEmbed] })
+        message.channel.send({ embeds: [setupEmbed] })
 	},
 };

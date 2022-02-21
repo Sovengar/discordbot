@@ -1,10 +1,11 @@
 const { Message, Client, MessageAttachment, MessageEmbed } = require("discord.js");
+const { getMember } = require('../../functions/utils')
 
 module.exports = {
     name: "avatar",
     aliases: ['avatar'],
-    description: "Shows the avatar of the user",
-    usage: "",
+    description: "Shows the avatar of the user provided else gets yours",
+    usage: "[member]",
     cooldown: 5,
     userPermissions: [,],
     botPermissions: [,],
@@ -15,12 +16,13 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-        const user = message.author || message.mentions.users.first(); //client.users.cache.get(User.id);
-        const member = message.guild.members.cache.get(user.id);
+        const member = getMember(client, message, args[0]) || message.member
 
-        const embed = new MessageEmbed()
-            .setAuthor({ name: `${user.tag}`, iconURL: user.displayAvatarURL({ dynamic: true }), url: '' })
-            .setImage(user.displayAvatarURL({ dynamic: true, size: 512 }));
-        message.channel.send({ embeds: [embed] });
+        message.channel.send({ embeds: [
+            new MessageEmbed()
+                .setAuthor({ name: `${member.user.tag}`, iconURL: member.user.displayAvatarURL({ dynamic: true }), url: '' })
+                .setImage(member.user.displayAvatarURL({ dynamic: true, size: 512 }))
+            ] 
+        })
     },
 };

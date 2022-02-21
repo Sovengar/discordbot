@@ -22,8 +22,7 @@ module.exports = {
         const member = interaction.options.getMember('member');
         const reason = interaction.options.getString('reason') || 'No reason provided';
 
-        if(!member) 
-            return interaction.followUp({ content: "The user provided is not valid in this guild, try using User id, name or mention the member!" });
+        if(!member) return interaction.followUp({ content: "The user provided is not valid in this guild, try using User id, name or mention the member!" });
 
         if(member.roles.highest.position >= interaction.member.roles.highest.position) 
             return interaction.followUp({ content: 'You cant take action on this user as their rol is higher than yours' });

@@ -3,7 +3,7 @@ const { Permissions } = require("discord.js");
 const GuildSettings = require("../../models/GuildSettings");
 
 module.exports = {
-	name : 'setprefix',
+	name : 'prefix',
     aliases : ['setprefix'],
     description: "Stablishes the prefix of the classic commands for this server",
     userPermissions: ["MANAGE_GUILD",],
@@ -17,11 +17,8 @@ module.exports = {
      * @param {String[]} args
     */
     run: async (client, message, args) => {
-        if(!args[0])
-            return message.reply("Choose a prefix first, check `help setprefix` for more info");
-        
-        if (args[0].length > 3) 
-            return message.reply("The new prefix can't be longer than 3 characters")
+        if(!args[0]) return message.reply("Choose a prefix first, check `help setprefix` for more info");
+        if (args[0].length > 3) return message.reply("The new prefix can't be longer than 3 characters")
 
         GuildSettings.findOne({ guild_id: message.member.guild.id }, (err, data) => {
             if (err) {
@@ -34,7 +31,7 @@ module.exports = {
                     guild_id: message.guild.id,
                     prefix: args[0],
                 })
-                data.save()
+                data.save().catch(err => console.log(err))
             } else {
                 data.prefix = args[0]
                 data.save()

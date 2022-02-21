@@ -1,5 +1,6 @@
 const { Message, Client } = require("discord.js");
 const ms = require('ms');
+const { getMember } = require('../../functions/utils')
 
 module.exports = {
     name : 'purge',
@@ -17,29 +18,18 @@ module.exports = {
     */
     run: async (client, message, args) => {
         const numMessages = parseInt(args[0]);
-        const allMessages = message.channel.messages.fetch();
-        let member = null;
-
         if(!numMessages) return message.reply('Please specify a number of messages to delete ranging from 1 - 99');
         if(isNaN(numMessages)) return message.reply('Only numbers are allowed');
         if(numMessages > 99) return message.reply('The max amount of messages that I can delete is 99');
 
-        try {
-            member = 
-            message.mentions.members.first() || //Mention the member
-            message.guild.members.cache.get(args[1]) || //Send member's id
-            message.guild.members.cache.find( m => m.displayName.toLowerCase() === args[1].toLocaleLowerCase() ) || //Member displayname
-            message.guild.members.cache.find( m => m.user.username.toLowerCase() === args[1].toLocaleLowerCase() ); //Type username
-        } catch (error) {
-            //console.error(error);
-        }
+        const allMessages = message.channel.messages.fetch();
+        const member = getMember(client, message, args[1])
         
         if (member) {
             const userMessages = (await allMessages).filter((m) => m.author.id === member.id);
             const userMessagesToDelete = [];
             const size = userMessages.size;
             let counter = 0;
-            console.log(size);
             if(size <= numMessages) {
                 if(size === 0){
                     message.reply(`User ${member} doesnt have messages to delete.`);

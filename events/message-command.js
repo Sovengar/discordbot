@@ -20,20 +20,34 @@ client.on("messageCreate", async (message) => {
 
     ///GETTING DATA FROM THE COMMAND
     const [cmd, ...args] = 
-    message.content.toLowerCase().startsWith(prefix)
-    ? message.content.slice(prefix.length).trim().split(/ +/g)
-    : message.content.trim().split()
+        message.content.toLowerCase().startsWith(prefix)
+        ? message.content.slice(prefix.length).trim().split(/ +/g)
+        : message.content.trim().split()
 
     ///GETTING THE COMMAND FROM THE DATA ABOVE
     const command = 
-    message.content.toLowerCase().startsWith(prefix)
-    ? client.messageCommands.get(cmd.toLowerCase()) || client.messageCommands.find(commands => commands.aliases?.includes(cmd.toLowerCase()))
-    : client.noPrefixCommands.get(cmd.toLowerCase())
+        message.content.toLowerCase().startsWith(prefix)
+        ? client.messageCommands.get(cmd.toLowerCase()) || client.messageCommands.find(commands => commands.aliases?.includes(cmd.toLowerCase()))
+        : client.noPrefixCommands.get(cmd.toLowerCase())
     /** You can't get the noPrefixCommand with .includes(), because if you have i.e command 'calla' and 'callau' 
     * it will return 2 results resulting in getting no command. So we have to type the name of the command with no previous letters.
     */
 
+    ///CHECK COMMAND EXISTS
     if (!command) return;
+
+    ///CHECKING IF IS A DISABLED COMMAND TO KNOW IF CAN BE EXECUTED FROM THE PROPERTY RUN
+    if (guildSettings?.allowAntiBL_messageCommands) {
+        if (guildSettings.blacklist_messageCommands.includes(command.name)) 
+            return message.reply("This command is disabled!");
+    } 
+
+    ///CHECKING IF IS A BLACKLISTED USER
+    if (guildSettings?.allowAntiBL_members) {
+        if (guildSettings.blacklist_members.includes(message.author.id)){
+            return message.reply("You are a blacklisted member");
+        }     
+    }
 
     ///CHECK COOLDOWN
     if (!cooldowns.has(command.name)) 
@@ -82,13 +96,5 @@ client.on("messageCreate", async (message) => {
                 .setDescription(`❌ - I need \`${command.botPermissions || []}\` permission(s) to execute this command!`)
         ] })
 
-    //CHECKING IF IS A DISABLED COMMAND TO KNOW IF CAN BE EXECUTED FROM THE PROPERTY RUN
-    if (guildSettings) {
-        if (guildSettings.disabledMessageCommands.includes(command.name)) 
-            return message.reply("This command is disabled!");
-        await command.run(client, message, args);
-    } else {
-        await command.run(client, message, args);
-    } 
-    
+    await command.run(client, message, args);
 });

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 const ReactionRolesSchema = new mongoose.Schema({
-    Guild: String,
+    guild_id: String,
     Message: String,
     Roles: Object,
 })

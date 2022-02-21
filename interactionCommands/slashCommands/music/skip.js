@@ -1,19 +1,48 @@
 const player = require("../../../client/discordMusicPlayer");
+const { Client, CommandInteraction, MessageEmbed } = require('discord.js')
 
 module.exports = {
     name: "skip",
     description: "skip the current song",
     permissions: "",
-    cooldown: 5,
+    cooldown: 1,
+    /**
+     *
+     * @param {Client} client
+     * @param {CommandInteraction} interaction
+     * @param {String[]} args
+    */
     run: async (client, interaction, args) => {
+        await interaction.deferReply()
         const queue = player.getQueue(interaction.guildId);
-        if (!queue?.playing)
-            return interaction.followUp({
-                content: "No music is currently being played",
-            });
 
-        await queue.skip();
+        if (!interaction.member.voice.channel) 
+            return interaction.followUp({ embeds: [
+                new MessageEmbed()
+                    .setColor('#3d35cc')
+                    .setDescription(`‼️ - You have to be in a Voice Channel to use this command!`)
+            ] })
 
-        interaction.followUp({ content: "Skipped the current track!" });
+        if (!queue?.playing) 
+            return interaction.followUp({ embeds: [
+                new MessageEmbed()
+                    .setColor("#3d35cc")
+                    .setDescription(`‼️ - No music is currently be played in this server!`)
+            ] })
+
+        if (interaction.member.voice.channel.id !== interaction.guild.me.voice.channel.id) 
+            return interaction.followUp({ embeds: [
+                new MessageEmbed()
+                    .setColor('#3d35cc')
+                    .setDescription(`‼️ - Music is currently being played in **${interaction.guild.me.voice.channel.name}**. You've to be in the same Voice Channel to execute this command!`)
+             ] })
+
+        await queue.skip()
+
+        return interaction.followUp({ embeds: [
+            new MessageEmbed()
+                .setColor("#3d35cc")
+                .setDescription(`✅ - The current song has been skipped`)
+        ] })
     },
 };

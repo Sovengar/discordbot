@@ -15,16 +15,14 @@ module.exports = {
      * @param {String[]} args
     */
     run: async (client, message, args) => {
-        let channelAux = args.shift()
-        const channel = message.mentions.channels.first() || message.guild.channels.cache.get(channelAux)
-        let anc = args.join(" ") //args.slice(1).join(" ")
         let mention
 
-        if (!channel) 
-            return message.reply("Please provide a channel where you wanna send the announcement!")
+        let channelAux = args.shift()
+        const channel = message.mentions.channels.first() || message.guild.channels.cache.get(channelAux)
+        if (!channel) return message.reply("Please provide a channel where you wanna send the announcement!")
 
-        if (!anc) 
-            return message.reply("Please provide what to announce!")
+        let anc = args.join(" ") //args.slice(1).join(" ")
+        if (!anc) return message.reply("Please provide what to announce!")
 
         //If announcement ends with -ping adds an @everyone on the message.
         if (args.some((val) => val.toLowerCase() === "-ping")) {

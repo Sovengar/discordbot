@@ -11,7 +11,7 @@ client.on("messageCreate", async(message) => {
 
     if(!guildSettings?.allowAnticurse) return;
 
-    if (guildSettings.bannedWords.some(word => message.content.toLowerCase().includes(word))) {
+    if (guildSettings.blacklist_words.some(word => message.content.toLowerCase().includes(word))) {
         message.delete().catch(err => { if (err.code !== 10008) return console.log(err) })
         message.channel.send(`${message.author}, the word you used is blacklisted in this server!`)
     }

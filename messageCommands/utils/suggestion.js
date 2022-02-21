@@ -17,18 +17,12 @@ module.exports = {
     */
     run: async (client, message, args) => {
         const guildSettings = await GuildSettings.findOne({ guild_id: message.guild.id })
-        const chxs = guildSettings.suggestionChannelId
-
-        if(!guildSettings.allowSuggestion)
-            return message.reply("Suggestion are currently disabled!")
-
-        if (!chxs) 
-            return message.reply("Suggestion Channel is not set yet!")
+        if(!guildSettings) return //TODO SI NO HAY GUILD TENEMOS QUE CREAR Y AVISAR
+        if(!guildSettings.allowSuggestion) return message.reply("Suggestion are currently disabled!")
+        if (!guildSettings.suggestionChannelId) return message.reply("Suggestion Channel is not set yet!")
 
         const query = args.join(" ")
-
-        if (!query) 
-            return message.reply("State your suggestion please!")
+        if (!query) return message.reply("State your suggestion please!")
 
         const image = message.attachments.first() ? message.attachments.first().proxyURL : null
 
@@ -40,7 +34,7 @@ module.exports = {
             .setImage(image)
             .setTimestamp()
 
-        const channel = message.guild.channels.cache.get(chxs)
+        const channel = message.guild.channels.cache.get(guildSettings.suggestionChannelId)
 
         const row = new MessageActionRow().addComponents(
 

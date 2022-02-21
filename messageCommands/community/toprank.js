@@ -19,14 +19,10 @@ module.exports = {
     */
     run: async (client, message, args) => {
         const guildSettings = await GuildSettings.findOne({ guild_id: message.guild.id });
-        
-        if(!guildSettings)
-            return;
+        if(!guildSettings) return;
 
         const rawLeaderboard = await Levels.fetchLeaderboard(message.guild.id, 10)
-
-        if (rawLeaderboard.length < 1) 
-            return message.reply("Nobody's in the leaderboard yet!")
+        if (rawLeaderboard.length < 1) return message.reply("Nobody's in the leaderboard yet!")
 
         const leaderboard = await Levels.computeLeaderboard(client, rawLeaderboard, true)
         const lb = leaderboard.map(e => `\`${e.position}\` | ${e.username}#${e.discriminator} | **${e.level}** Level | **${e.xp.toLocaleString()}** XP`).join("\n")

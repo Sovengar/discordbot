@@ -18,9 +18,9 @@ module.exports = {
      * @param {String[]} args
     */
     run: async (client, interaction, args) => {
-        await interaction.deferReply({ ephemeral: true}).catch(() => {});
+        await interaction.deferReply({ ephemeral: true }) //Opens a reply with message 'bot is thinking' for 15 mins
         const guildSettings = await GuildSettings.findOne({ guild_id: interaction.member.guild.id })
-        let prefix = guildSettings.prefix ? guildSettings.prefix : process.env.PREFIX
+        let prefix = guildSettings?.prefix ? guildSettings.prefix : process.env.PREFIX
         const argsCommand = interaction.options.getString("command");
 
         const emojis = {
@@ -45,7 +45,7 @@ module.exports = {
         const formatString = (str) => `${str[0].toUpperCase()}${str.slice(1).toLowerCase()}`;
         const categories = directories.map((dir) => {
             const getCommands = client.interactionCommands
-                .filter((cmd) => cmd.directory === dir) //TODO
+                .filter((cmd) => cmd.directory === dir)
                 .filter( (cmd) => interaction.member.permissions.has(cmd.permissions || [])  ) //IF THE USER DOESNT HAVE THE PERMISSION THE COMMAND IS NOT SHOWN
                 .map((cmd) => {
                 if( !cmd.description &&  ["MESSAGE", "USER"].includes(cmd.type)){
@@ -61,68 +61,78 @@ module.exports = {
         });
 
         if(!argsCommand) {
-        const embed = new MessageEmbed()
-            .setDescription(`
-            To see classic commands and ''commands'' with no prefix please use \`${prefix}help\`, then choose a category in the dropdown menu. Add the name of the command to get more info, like \`${prefix}help ping\`
-            \nTo see slash commands use \`/help\`, then choose a category in the dropdown menu. Add the command to get more info, like \`/help ping\`  
-            Or just \`/\` and scroll to search your command or click the bot image on the left. You can also type the command to filter the query. 
-            \nContext menu commands are shown on \`/help\` too but you can right click on a message or user and click on Apps.`)
-            .setFooter({ text: `Requested by ${interaction.user.tag}`, iconURL: interaction.user.displayAvatarURL({ dynamic: true })})
-            .setColor(roleColor);
-            
-        const components = (state) => [
-            new MessageActionRow().addComponents(
-                new MessageSelectMenu()
-                    .setCustomId("help-menu")
-                    .setPlaceholder('Please select a category')
-                    .setDisabled(state)
-                    .addOptions(categories.map((cmd) => {
-                        return {
-                            label: cmd.directory,
-                            value: cmd.directory.toLowerCase(),
-                            description: `Commands from ${cmd.directory} category`,
-                            emoji: emojis[cmd.directory.toLowerCase() || null]
-                        }
-                    }))
-            ),
-        ];
-
-        const initialMessage = await interaction.followUp({
-            embeds: [embed],
-            components: components(false),
-            ephemeral: true,
-        });
-
-        const filter = (filterInteraction) => filterInteraction.user.id === interaction.user.id;
-        const collector = interaction.channel.createMessageComponentCollector({
-            filter, 
-            componentType: "SELECT_MENU", 
-            time: 80000,
-        });
-
-        collector.on('collect', (collectorInteraction) => {
-            let [directory] = collectorInteraction.values;
-            const category = categories.find( (x) => x.directory.toLowerCase() === directory);
-            directory = directory.charAt(0).toUpperCase() + directory.slice(1);
-            
-            const categoryEmbed = new MessageEmbed()
-                .setTitle(`${directory} commands`)
-                .addFields(category.commands.map( (cmd) => {
-                    return {
-                        name: `\`${cmd.name}\``,
-                        value: cmd.description,
-                        inline: true,
-                    }; 
-                }))
+            const embed = new MessageEmbed()
+                .setDescription(`
+                To see classic commands and ''commands'' with no prefix please use \`${prefix}help\`, then choose a category in the dropdown menu. Add the name of the command to get more info, like \`${prefix}help ping\`
+                \nTo see slash commands use \`/help\`, then choose a category in the dropdown menu. Add the command to get more info, like \`/help ping\`  
+                Or just \`/\` and scroll to search your command or click the bot image on the left. You can also type the command to filter the query. 
+                \nContext menu commands are shown on \`/help\` too but you can right click on a message or user and click on Apps.`)
                 .setFooter({ text: `Requested by ${interaction.user.tag}`, iconURL: interaction.user.displayAvatarURL({ dynamic: true })})
                 .setColor(roleColor);
+                
+            const components = (state) => [
+                new MessageActionRow().addComponents(
+                    new MessageSelectMenu()
+                        .setCustomId("help-menu")
+                        .setPlaceholder('Please select a category')
+                        .setDisabled(state)
+                        .addOptions(categories.map((cmd) => {
+                            return {
+                                label: cmd.directory,
+                                value: cmd.directory.toLowerCase(),
+                                description: `Commands from ${cmd.directory} category`,
+                                emoji: emojis[cmd.directory.toLowerCase() || null]
+                            }
+                        }))
+                ),
+            ];
 
-            collectorInteraction.update({ embeds: [categoryEmbed]});
-        });
+            const initialMessage = await interaction.editReply({ //Loads the embed and the component
+                ephemeral: true,
+                embeds: [embed],
+                components: components(false), 
+            }).catch(() => {})
 
-        collector.on('end', () => {
-            initialMessage.edit({ components: components(true)});
-        });
+            //FILTERING THE INTERACTION TO ONLY ALLOW THE AUTHOR TO USE THE COLLECTOR
+            const filter = (filterInteraction) => filterInteraction.user.id === interaction.user.id;
+
+            const collector = interaction.channel.createMessageComponentCollector({
+                filter, 
+                componentType: "SELECT_MENU", 
+                time: 80000,
+            });
+
+            let selectMenuInteraction
+            collector.on('collect', (select_menu_interaction) => {
+                let [directory] = select_menu_interaction.values;
+                const category = categories.find( (x) => x.directory.toLowerCase() === directory);
+                directory = directory.charAt(0).toUpperCase() + directory.slice(1);
+                
+                const categoryEmbed = new MessageEmbed()
+                    .setTitle(`${directory} commands`)
+                    .addFields(category.commands.map( (cmd) => {
+                        return {
+                            name: `\`${cmd.name}\``,
+                            value: cmd.description,
+                            inline: true,
+                        }; 
+                    }))
+                    .setFooter({ text: `Requested by ${interaction.user.tag}`, iconURL: interaction.user.displayAvatarURL({ dynamic: true })})
+                    .setColor(roleColor);
+
+                select_menu_interaction.update({ embeds: [categoryEmbed], ephemeral: true});
+                selectMenuInteraction = select_menu_interaction.id
+            });
+
+            collector.on('end', async (colInt) => {
+                await interaction.editReply({ embeds: [embed], components: components(true), ephemeral: true}); //Loads the default embed and makes the select menu unclickable
+                try {
+                    await colInt.get(selectMenuInteraction).editReply({ components: [] }) //Removes the select menu
+                } catch (error) {
+                    interaction.editReply({ embeds: [embed], components: [], ephemeral: true});
+                }
+            });
+
         } else {
             const command = 
                 client.interactionCommands.get(args[0].toLowerCase()) || 
@@ -133,8 +143,9 @@ module.exports = {
                     .setTitle('Not Found')
                     .setDescription(`Command not found, Use \`/help\` for all commands available`)
                     .setColor(roleColor);
-                return interaction.followUp({ embeds: [embed], ephemeral: true,})
+                return interaction.editReply({ embeds: [embed], ephemeral: true,})
             }
+            
             const embed = new MessageEmbed()
                 .setTitle("Command Details")
                 .addField("COMMAND:",command.name ? `\`${command.name}\`` : "No name for this command")
@@ -143,7 +154,7 @@ module.exports = {
                 .addField("DESCRIPTION", command.description ? command.description : "No description for this command.")
                 .setFooter({ text: `Requested by ${interaction.user.tag}`, iconURL: interaction.user.displayAvatarURL({ dynamic: true })})
                 .setColor(roleColor);
-            return interaction.followUp({ embeds: [embed], ephemeral: true,});
+            return interaction.editReply({ embeds: [embed], ephemeral: true,});
         }
     },
 };

@@ -1,6 +1,6 @@
 const player = require("../../../client/discordMusicPlayer");
 const axios = require("axios");
-const { MessageEmbed } = require("discord.js");
+const { Client, MessageEmbed, CommandInteraction } = require("discord.js");
 
 const getLyrics = (title) =>
     new Promise(async (ful, rej) => {
@@ -59,8 +59,16 @@ module.exports = {
             required: false
         }
     ],
-    run: async (client, interaction) => {
+    /**
+     *
+     * @param {Client} client
+     * @param {CommandInteraction} interaction
+     * @param {String[]} args
+    */
+    run: async (client, interaction, args) => {
+        await interaction.deferReply()
         const title = interaction.options.getString("title");
+
         const sendLyrics = (songTitle) => {
             return createResponse(songTitle)
                 .then((res) => {
@@ -73,10 +81,27 @@ module.exports = {
         if (title) return sendLyrics(title);
 
         const queue = player.getQueue(interaction.guildId);
-        if (!queue?.playing)
-            return interaction.followUp({
-                content: "No music is currently being played"
-            });
+
+        if (!interaction.member.voice.channel) 
+            return interaction.followUp({ embeds: [
+                new MessageEmbed()
+                    .setColor('#3d35cc')
+                    .setDescription(`‼️ - You have to be in a Voice Channel to use this command!`)
+            ] })
+
+        if (!queue?.playing) 
+            return interaction.followUp({ embeds: [
+                new MessageEmbed()
+                .setColor("#3d35cc")
+                .setDescription(`‼️ - No music is currently be played in this server!`)
+            ] })
+        
+        if (interaction.member.voice.channel.id !== interaction.guild.me.voice.channel.id) 
+            return interaction.followUp({ embeds: [
+                new MessageEmbed()
+                    .setColor('#3d35cc')
+                    .setDescription(`‼️ - Music is currently being played in **${interaction.guild.me.voice.channel.name}**. You've to be in the same Voice Channel to execute this command!`)
+            ] })    
 
         return sendLyrics(queue.current.title);
     }

@@ -36,4 +36,10 @@ module.exports = async (client, Ascii) => {
         await Table.addRow(commandFile.name, "🔹 SUCCESSFUL")
     });
     console.log(Table.toString())
+
+    /*
+    Classic commands dont need to be imported to the guild like interaction commands.
+    They just are accesed through client.messageCommands.
+    Interaction commands do need to be imported so the API can show them on the interface.
+    */
 };

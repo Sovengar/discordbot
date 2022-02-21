@@ -14,11 +14,8 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-        if(!args[0]){
-            return message.reply({ content: "Tell the bot what to say, my god!" });
-        } else {
-            message.channel.send(`${args}. By ${message.author} `)
-                .then(message.delete().catch(err => console.log(err)))
-        }
+        if(!args.length) return message.reply({ content: "Tell the bot what to say, my god!" });
+        
+        message.channel.send(`${args.join(" ")}. By ${message.author} `).then(message.delete().catch(err => console.log(err)))
     },
 };

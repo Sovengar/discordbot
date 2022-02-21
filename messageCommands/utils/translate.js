@@ -16,15 +16,16 @@ module.exports= {
      * @param {String[]} args
     */
     run : async(client, message, args) => {
-        const language = args.shift();
+        const language = args?.shift();
+        if(!language) return message.reply("Language was not set!");
+        if (!args.length) return message.reply("Please provide a text to translate!");
+        const text = args.join(" ")
 
-        if (!args) return message.reply("Please provide a text to translate!");
-
-        translate(args.join(" "), {to : `${language}`})
+        translate(text, {to : `${language}`})
             .then(msg => {
                 const transEmbed = new MessageEmbed()
                     .setColor("RED")
-                    .addField("Raw", "```" + args + "```")
+                    .addField("Raw", "```" + text + "```")
                     .addField("Translated", "```" + msg + "```")
                     .setTimestamp();
                 message.reply({ embeds: [transEmbed] });  

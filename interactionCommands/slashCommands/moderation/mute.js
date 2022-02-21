@@ -156,7 +156,7 @@ module.exports = {
 
                     await member.roles.add(role2)
 
-                    GuildSettings.findOne({ Guild: interaction.guild.id }, async (err, data) => {
+                    GuildSettings.findOne({ guild_id: interaction.guild.id }, async (err, data) => {
                         if (!data) {
                             new GuildSettings({
                                 guild_id: interaction.guild.id,

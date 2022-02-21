@@ -17,15 +17,11 @@ module.exports = {
     */
     run: async (client, message, args) => {
         const userId = args[0];
-        if(!userId) 
-            return message.reply("Please send an id");
-        
-        if(isNaN(userId))
-            return message.reply("The user ID only has numbers!");
+        if(!userId) return message.reply("Please send an id");
+        if(isNaN(userId)) return message.reply("The user ID only has numbers!");
 
         const bannedMembers = await message.guild.bans.fetch();
-        if(!bannedMembers.find( user => user.user.id === userId ))
-            return message.reply("User is not banned!");
+        if(!bannedMembers.find( user => user.user.id === userId )) return message.reply("User is not banned!");
         
         //Creating a Component to vote yes or no.
         const row = new MessageActionRow().addComponents(

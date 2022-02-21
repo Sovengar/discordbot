@@ -23,7 +23,7 @@ client.on("messageCreate", async (message) => {
     */
 
     //CHECKING IF THE MESSAGE IS FROM A DISABLED CHANNEL
-    const channel = guildSettings.disabledLevelingChannels.findIndex( (prop) => prop === message.channel.id )
+    const channel = guildSettings.blacklist_levelingChannels.findIndex( (prop) => prop === message.channel.id )
     if (channel != -1) 
         return;
 

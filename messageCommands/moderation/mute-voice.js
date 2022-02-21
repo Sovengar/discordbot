@@ -1,4 +1,5 @@
 const { Message, Client, MessageEmbed} = require("discord.js");
+const { getMember } = require('../../functions/utils')
 
 module.exports = {
     name: "mute-voice",
@@ -14,16 +15,20 @@ module.exports = {
      * @Param {String[]} args
      */
     run: async (client, message, args) => {
-        const member = 
-            message.mentions.members.first() || //Mention the member
-            message.guild.members.cache.get(args[1]) || //Send member's id
-            message.guild.members.cache.find( m => m.displayName.toLowerCase() === args[1].toLocaleLowerCase() ) || //Member displayname
-            message.guild.members.cache.find( m => m.user.username.toLowerCase() === args[1].toLocaleLowerCase() ); //Type username
+        let toggling = ["on", "off"]
+        if (!toggling.includes(args[0]?.toLowerCase())) 
+            return message.reply({ embeds: [
+                new MessageEmbed()
+                    .setColor("RED")
+                    .setDescription("‼ - Please provide a valid option between `on` or `off`!")
+            ]})
+
+        const member = getMember(client, message, args[1])
         if (!member) return message.reply("Please specify a member!")
 
-        const role = message.guild.roles.cache.find( (role) => role.name.toLowerCase() === "antivc" )
+        let role = message.guild.roles.cache.find( (role) => role.name.toLowerCase() === "antivc" )
 
-        if(args[0] === "on"){
+        if(args[0]?.toLowerCase() === "on"){
             if(!role){
                 try {
                     message.channel.send("Attempting to create antivc role!");
@@ -46,14 +51,12 @@ module.exports = {
             message.reply(`${member} has been voice muted`)
         }
 
-        else if(args[0] === "off"){
+        else if(args[0]?.toLowerCase() === "off"){
             if(!role) return message.reply("The role doesnt exist!")
             if(!member.roles.cache.has(role.id)) return message.reply(`${member} is not voice muted`);
 
             member.roles.remove(role.id);
             message.reply(`${member} has been voice unmuted`);
         }
-
-        else return message.reply("Wrong arguments, check `help mute-voice` for more info")
     },
 };

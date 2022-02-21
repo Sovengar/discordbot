@@ -19,15 +19,17 @@ module.exports = {
      * @returns 
      */
     run: async (client, message, args, ) => {
-        const actions = ["create", "load", "info", "delete"]
+        if (message.author.id !== message.guild.ownerId) return message.reply("Only the owner of the server can use this command!")
 
-        if (message.author.id !== message.guild.ownerId) 
-            return message.reply("Only the owner of the server can use this command!")
+        let toggling = ["create", "load", "info", "delete"]
+        if (!toggling.includes(args[0]?.toLowerCase())) 
+            return message.reply({ embeds: [
+                new MessageEmbed()
+                    .setColor("RED")
+                    .setDescription("‼ - Please provide a valid option between `create`, `load`, `info` or `delete`!")
+            ]})
 
-        if (!actions.includes(args[0])) 
-            return message.reply("You can only choose among `create` / `load` / `info` / `delete`")
-
-        if (args[0] === "create") {
+        if (args[0]?.toLowerCase() === "create") {
             backup.create(message.guild, {jsonBeautify: true}).then(async backupdata => {
                 const Embed = new MessageEmbed()
                     .setColor("RED")
@@ -40,24 +42,20 @@ module.exports = {
             })
         }
 
-        if (args[0] === "load") {
+        if (args[0]?.toLowerCase() === "load") {
             const backupID = args[1]
+            if (!backupID) return message.reply("Please provide a backup ID")
 
-            if (!backupID) 
-                return message.reply("Please provide a backup ID")
-
-            backup.fetch(backupID).then(async () => {
-                backup.load(backupID, message.guild).then(() => {clearGuildBeforeRestore: true, backup.remove(backupID)})
-            }).catch(err => {
-                message.reply("No backup was found with that ID!")
-            })
+            backup.fetch(backupID)
+                .then(async () => {
+                    backup.load(backupID, message.guild).then(() => {clearGuildBeforeRestore: true, backup.remove(backupID)})
+                })
+                .catch(err => { message.reply("No backup was found with that ID!") })
         }
 
-        if (args[0] === "info") {
+        if (args[0]?.toLowerCase() === "info") {
             const backupID = args[1]
-
-            if (!backupID) 
-                return message.reply("Please provide a backup ID")
+            if (!backupID) return message.reply("Please provide a backup ID")
 
             backup.fetch(backupID).then((backupInfos) => {
                 const date = new Date(backupInfos.data.createdTimestamp)
@@ -76,13 +74,12 @@ module.exports = {
             }).catch((err) => { return message.channel.send("No backup was found with that ID!") })
         }
 
-        if (args[0] === "delete") {
+        if (args[0]?.toLowerCase() === "delete") {
             const backupID = args[1]
+            if (!backupID) return message.reply("Please provide a backup ID")
 
-            if (!backupID) 
-                return message.reply("Please provide a backup ID")
-
-            backup.remove(backupID).then((backupInfos) => { message.reply("Backup data has successfully been deleted")})
+            backup.remove(backupID)
+                .then((backupInfos) => { message.reply("Backup data has successfully been deleted")})
                 .catch((err) => { return message.channel.send("No backup was found with that ID!") })
         }
     },

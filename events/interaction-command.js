@@ -9,9 +9,7 @@ module.exports = { name: "interaction-command",};
 client.on("interactionCreate", async (interaction) => {
     // Slash Command Handling (type:CHAT_INPUT)
     if (interaction.isCommand()) {
-        //Starts the command with a reply opened for 15mins to edit or followUp with the message botname is thinking...
-        //Ruins the ephemeral system
-        //await interaction.deferReply({ephemeral: false}).catch(() => {});
+        //await interaction.deferReply({ephemeral: false}).catch(() => {}); I think this is bad practice and doesnt allow ephemeral
 
         const cmd = client.interactionCommands.get(interaction.commandName);
 
@@ -52,7 +50,7 @@ client.on("interactionCreate", async (interaction) => {
             timeStamps.delete(interaction.user.id)
         }, cooldownAmount);
 
-        ///MANAGING OPTIONS FROM THE COMMAND ???
+        ///MANAGING SUB COMMAND OPTIONS FROM THE COMMAND ???
         const args = [];
         for (let option of interaction.options.data) {
             if (option.type === "SUB_COMMAND") {
@@ -65,12 +63,12 @@ client.on("interactionCreate", async (interaction) => {
                 args.push(option.value);
         }
 
-        ///CHECKING GLOBAL(APPLICATION) COMMANDS PERMISSIONS
-        if(!interaction.member.permissions.has(cmd.userPermissions || []))
-            return interaction.reply({ content: "You do not have permissions to use this command!", });
-
         //STABLISHING PROPERTY MEMBER BECAUSE DISCORD ONLY ADDED PROPERTY USER (THIS IS JUST CANDY SYNTAX)
         interaction.member = interaction.guild.members.cache.get(interaction.user.id);
+
+        ///CHECKING GLOBAL(APPLICATION) COMMANDS PERMISSIONS ???
+        if(!interaction.member.permissions.has(cmd.userPermissions || []))
+            return interaction.reply({ content: "You do not have permissions to use this command!", });
 
         //EXECUTING THE COMMAND FROM THE PROPERTY RUN        
         cmd.run(client, interaction, args);
@@ -78,9 +76,7 @@ client.on("interactionCreate", async (interaction) => {
 
     // Context Menu Handling (type:MESSAGE,USER)
     if (interaction.isContextMenu()) {
-        //Starts the command with a reply opened for 15mins to edit or followUp with the message botname is thinking...
-        //Ruins the ephemeral system
-        //await interaction.deferReply({ ephemeral: false });
+        //await interaction.deferReply({ ephemeral: false }); I think this is bad practice and doesnt allow ephemeral
         const command = client.interactionCommands.get(interaction.commandName);
 
         //EXECUTING THE COMMAND FROM THE PROPERTY RUN

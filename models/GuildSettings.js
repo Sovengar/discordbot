@@ -13,6 +13,8 @@ const GuildSettingsSchema = new mongoose.Schema({
 	allowAntilink: { type: Boolean, default: false },
 	allowAnticurse: { type: Boolean, default: false },
 	allowAntiAdvertising: { type: Boolean, default: false },
+	allowAntiBL_messageCommands: { type: Boolean, default: false },
+	allowAntiBL_members: { type: Boolean, default: false },
 
 	welcomeChannelId: { type: String, },
 	welcomeImage: { type: String, },
@@ -22,11 +24,12 @@ const GuildSettingsSchema = new mongoose.Schema({
 	memberRoleId: { type: String, },
 	suggestionChannelId: { type: String, },
 	
-	antiLinkChannels: { type: Array, default: [] },
 	mutedUsers: { type: Array, default: [] },
-	bannedWords: { type: Array, default: [] },
-	disabledMessageCommands: { type: Array, default: [] },
-	disabledLevelingChannels: { type: Array, default: [] },
+	blacklist_members: { type: Array, default: [] },
+	blacklist_words: { type: Array, default: [] },
+	blacklist_messageCommands: { type: Array, default: [] },
+	blacklist_levelingChannels: { type: Array, default: [] },
+	blacklist_linkChannels: { type: Array, default: [] },
 });
 
 const guildSettingsModel = mongoose.model("GuildSettings", GuildSettingsSchema);

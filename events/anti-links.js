@@ -11,11 +11,11 @@ client.on("messageCreate", async (message) => {
 
     const guildSettings = await GuildSettings.findOne({ guild_id: message.guild.id });
 
-    if (!guildSettings.allowAntilink) 
+    if (!guildSettings?.allowAntilink) 
         return 
 
     //CHECKING IF THE CHANNEL IS AN ANTILINK CHANNEL
-    const antiLinkChannelIndex = guildSettings.antiLinkChannels.findIndex((prop) => prop === message.channel.id)
+    const antiLinkChannelIndex = guildSettings.blacklist_linkChannels.findIndex((prop) => prop === message.channel.id)
 
     if(antiLinkChannelIndex < 0)
         return

@@ -1,39 +1,38 @@
 POR HACER EN SLASHCOMMANDS O CONTEXTMENU:
 playlocal
-setup folder,   rank,top,   eadd,ebal,ermv,   ticket, suggestion, announce(no se puede),    reactionx3, 
-command-enable/disable
+setup folder,   rank,top,   money,   ticket, suggestion, announce(no se puede),    reaction, 
 lockdown, slowmode, ban-list, nuke
 emoji-steal
 slap
-user roles
-member join position
 antijoin
 afk
 emojify
 mute voice
 trivia
+blacklist-command
+blacklist-user
+coinflip
 
 POR HACER EN MESSAGE:
 giveaway,   mute,unmute, timeout 
 
 POR HACER EN AMBOS:
-loopqueue, clearqueue, shuffle, skip?
-
-Remindme
-Rock Paper Scissors with the bot.
-Flip a coin.
 poll Start a poll (max 5 choices)
 ?poll [message] "[choice1]" "[choice2]"
-poll show
-?poll poll show [message ID/link]
+poll show  ?poll poll show [message ID/link]
 
 MEJORAR:
-Hay que revisar migrar los comandos de 1 guild a todas.
-Con solo poner el nombre del comando, si lleva argumentos, que devuelva el formato en vez de decirte que hagas help
+Interaction commands, toca actualizarlos en base a los cambios en messageCommands.
+Interaction commands, toca actualizarlos en base al deferReply. 
 
-Probar a meter deferReply dentro del comando help para cuando expire no salte error al haber cerrado ya el interaction.
+Alojar el bot
 
+Revisar para que no salga el application command 2 veces.
+the first one you're seeing is the data created from Single Guild Slash Command, and the second you're seeing is from Multi-Guild one. So once you host the bot for Multi-Guild, people won't see 2 commands, there will be only one command. I also advice to use Single Guild for Testing purposes.
 
+Testear setup y music
+
+message.channel.awaitMessages(response => response.content === "test",
 
 
 PERMISOS:
@@ -41,3 +40,128 @@ Los permisos para interaction commands se gestionan con .permissions ya que no v
 *Desde los ficheros interaction Handler y interaction event.
 Los permisos para message commands se gestionan con user y bot permissions.
 *Desde el fichero message event.
+
+
+
+Apuntarme Quokka en el doc
+
+
+Eliminar caracter a caracter =>         Suprimir.
+Eliminar word by word =>                Ctrl + Suprimir. 
+Eliminar linea a linea =>               Ctrl + Shift + K.
+
+Navegar caracter a caracter =>          Left/Right/Up/Down arrow.
+Navegar word by word =>                 Ctrl + Left/Right
+
+Seleccionar caracter por caracter =>    Shift + Left/Right arrow
+Seleccionar word by word =>             Ctrl + Shift + Left/Right arrow
+Seleccionar linea a linea =>            Shift + Up/Down arrow OR Ctrl + Shift + L
+Seleccionar el fichero =>               Ctrl + A
+Seleccion multiple 1 a 1 =>             Ctrl + D.
+Seleccion multiple todas =>             Ctrl + Shift + L.
+
+
+Copiar linea a linea =>                 Ctrl+C con el cursor en la linea.
+Cortar linea a linea =>                 Ctrl+X con el cursor en la linea.
+
+Comentar y descomentar =>               Ctrl + ç.
+Mover una linea =>                      Alt + Up/Down arrow.
+Destabular =>                           Shift+Tab.
+Multiple cursors =>                      Alt+Click
+
+
+
+Using default values in arguments. 
+OR values en inicializaciones.
+Deconstructring objects.
+
+Always try to reduce the code to make it more readable.
+*Doubt. Avoid {} on conditionals or functions when you can.
+*Using annonymous things (functions, variables, objects, ...) when you can.
+*Evita usar el else con Class guarding y functions.
+*good naming (including constants like TAXES etc).
+*232 Evita en la medida de lo posible variables intermedias que se van actualizando e intenta que sean const.
+*Usa candy syntax cuando puedas, por ejemplo evita anidar callbacks y usa async await.
+*Intenta usar funciones para abstraer el codigo, asi solo hay que hacer cambios en 1 sitio y va en todos.
+
+
+
+SOLID PRINCIPLE:
+Software entities = Functions, modules, classes, etc.
+1. Single responsability - SE deberian hacer cosas individuales, no gestionar error, validacion, guardado, etc.
+*https://www.youtube.com/watch?v=5B587bQ-TNg
+La solucion suele ser descomponerlo en mini entidades.
+
+2. Open-closed - SE should be open for extension but closed for modification.
+Es decir, se pueden usar para crear mas contenido, variables, objetos etc pero sin tener que modificar la entidad.
+Suele violarse cuando se usan switchs o muchos if elses.
+La solucion suele ser descomponerlo en mini entidades.
+https://www.youtube.com/watch?v=-ptMtJAdj40&list=PLZlA0Gpn_vH_CthENcPCM0Dww6a5XYC7f&index=8
+
+3. Liskov substitution - Si B hereda de A, todos los metodos de A deben poder ser ejecutados por B.
+Hay 3 soluciones posibles segun el caso: 
+1. Añadir herencia superior
+*Por ejemplo square no hereda de rectangulo sino que ambos heredan de shape.
+2. Añadir herencia del mismo nivel pero mas concreta.
+*Por ejemplo un pato y un pinguino no heredan de pajaro sino de pajaro volador y de pajaro nadador.
+3. Usar compositions (Best solution)
+
+4. Interface segregation - Cuando se usa una interfaz y una entidad hereda un metodo o propiedad de esa interfaz que no puede utilizar.
+La solucion suele ser usar compositions.
+
+5. Dependency inversion - Cuando trabajamos con algo es recomendable hacer un handler por si queremos trabajar con otra cosa.
+Por ejemplo si trabajamos con una API de pago, hacer un handler que se encargue de elegir que API de pago (stripe, paypal, etc) utiliza.
+https://www.youtube.com/watch?v=9oHY5TllWaU&list=PLZlA0Gpn_vH_CthENcPCM0Dww6a5XYC7f&index=11
+
+232 Example:
+
+let total
+....
+total = aux + disccount
+....
+total += total + offer
+--------------------------
+....
+const total = aux + disccount + offer
+
+
+
+
+
+
+rank y toprank no hacen nada si no hay db.
+money no indica bien que argumentos necesita cuando no hay member.
+
+slowmode sin parametros te dice provide a valid channel.
+y no handleo si no provee time ni le digo que lo haga
+añadir slowmode para todos los canales?
+
+create ticket button me deja que le clickee yo, deberia ser invisible para mi
+
+help deja que otra persona lo edite
+
+suggestion no va si no hay bd, si esta off que diga como ponerlo on
+
+
+
+mute voice para los que tengan cierto rol
+channel.createOverwrite is not a function
+
+
+
+!annouce PENE
+!announce pene
+C Bot
+BOT
+ — Today at 2:01 AM
+Please provide a channel where you wanna send the announcement!
+
+No deberia dejarte crearlo sin texto 
+pon que sea !announcement bot-commands @everyone o /@rol "mensaje"
+
+
+mejora gif porque no te dice que se pueden usar parametros.
+
+
+
+afk deberia borrar el mention que me hace

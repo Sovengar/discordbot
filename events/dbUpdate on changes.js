@@ -21,13 +21,13 @@ client.on('channelDelete', async (channel) => {
 
         let index;
 
-        index = data.antiLinkChannels.indexOf(channel.id);
+        index = data.blacklist_linkChannels.indexOf(channel.id);
         if (index > -1) 
-            data.antiLinkChannels.splice(index, 1); // 2nd parameter means remove one item only
+            data.blacklist_linkChannels.splice(index, 1); // 2nd parameter means remove one item only
 
-        index = data.disabledLevelingChannels.indexOf(channel.id);
+        index = data.blacklist_levelingChannels.indexOf(channel.id);
         if (index > -1) 
-            data.disabledLevelingChannels.splice(index, 1); // 2nd parameter means remove one item only
+            data.blacklist_levelingChannels.splice(index, 1); // 2nd parameter means remove one item only
 
         if(data.welcomeChannelId === channel.id)
             data.welcomeChannelId = null;

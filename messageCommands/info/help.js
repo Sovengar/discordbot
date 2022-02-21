@@ -16,7 +16,7 @@ module.exports = {
    */
   run: async (client, message, args) => {
     const guildSettings = await GuildSettings.findOne({ guild_id: message.member.guild.id })
-    let prefix = guildSettings.prefix ? guildSettings.prefix : process.env.PREFIX
+    let prefix = guildSettings?.prefix ? guildSettings.prefix : process.env.PREFIX
 
     const emojis = {
         info: '📔', 
@@ -96,15 +96,19 @@ module.exports = {
             components: components(false),
         });
 
+        //FILTERING THE INTERACTION TO ONLY ALLOW THE AUTHOR TO USE THE COLLECTOR
         const filter = (interaction) => interaction.user.id === message.author.id;
+
+
         const collector = message.channel.createMessageComponentCollector({
             filter, 
             componentType: "SELECT_MENU", 
             time: 80000,
         });
 
-        collector.on('collect', (interaction) => {
-            let [directory] = interaction.values;
+        let selectMenuInteraction
+        collector.on('collect', (select_menu_interaction) => {
+            let [directory] = select_menu_interaction.values;
             const category = categories.find( (x) => x.directory.toLowerCase() === directory);
             directory = directory.charAt(0).toUpperCase() + directory.slice(1);
             
@@ -120,12 +124,19 @@ module.exports = {
                 .setFooter({ text: `Requested by ${message.author.tag}`, iconURL: message.author.displayAvatarURL({ dynamic: true })})
                 .setColor(roleColor);
 
-            interaction.update({ embeds: [categoryEmbed]});
+            select_menu_interaction.update({ embeds: [categoryEmbed]});
+            selectMenuInteraction = select_menu_interaction.id
         });
 
-        collector.on('end', () => {
-            initialMessage.edit({ components: components(true)});
+        collector.on('end', async (colInt) => {
+            await initialMessage.edit({ embeds: [embed], components: components(true)}); //Loads the default embed and makes the select menu unclickable
+            try {
+                await colInt.get(selectMenuInteraction).editReply({ components: [] }) //Removes the select menu
+            } catch (error) {
+                initialMessage.edit({ embeds: [embed], components: []});
+            }
         });
+
     } else {
         const command = 
             client.messageCommands.get(args[0].toLowerCase()) || 

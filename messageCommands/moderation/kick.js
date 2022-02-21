@@ -1,5 +1,6 @@
-const { Message, Client, MessageEmbed, MessageActionRow, MessageButton} = require("discord.js");
-const ms = require("ms");
+const { Message, Client, MessageEmbed, MessageActionRow, MessageButton} = require("discord.js")
+const { getMember } = require('../../functions/utils')
+const ms = require("ms")
 
 module.exports = {
     name : 'kick',
@@ -16,19 +17,11 @@ module.exports = {
      * @param {String[]} args
     */
     run: async (client, message, args) => {
-        const member = 
-            message.mentions.members.first() || //Mention the member
-            message.guild.members.cache.get(args[0]) || //Send member's id
-            message.guild.members.cache.find( m => m.displayName.toLowerCase() === args[0].toLocaleLowerCase() ) || //Member displayname
-            message.guild.members.cache.find( m => m.user.username.toLowerCase() === args[0].toLocaleLowerCase() ); //Type username
-        
-        const reason = args.slice(1).join(" ") || "No reason provided.";
-        
-        if(!member) 
-            return message.reply("The user provided is not valid in this guild, try using User id, name or mention the member!");
+        const member = getMember(client, message, args[0])
+        if(!member) return message.reply("The user provided is not valid in this guild, try using User id, name or mention the member!");
+        if(message.member.roles.highest.position <= member.roles.highest.position) return message.reply("You cannot punish someone with the same or higher role");
 
-        if(message.member.roles.highest.position <= member.roles.highest.position)
-            return message.reply("You cannot punish someone with the same or higher role");
+        const reason = args.slice(1).join(" ") || "No reason provided.";
 
         //Creating a Component to vote yes or no.
         const row = new MessageActionRow().addComponents(
