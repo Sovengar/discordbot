@@ -4,8 +4,8 @@ const { Client, Message, MessageEmbed } = require('discord.js')
 module.exports = {
     name: 'remove',
     aliases: ["r"],
-    description: "Removes the song provided",
-    usage: '',
+    description: "Removes the track provided",
+    usage: '[track number]',
     cooldown: 5,
     /**
      *

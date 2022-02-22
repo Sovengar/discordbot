@@ -2,13 +2,14 @@ const { Client, MessageEmbed, CommandInteraction } = require("discord.js");
 const player = require("../../../client/discordMusicPlayer");
 
 module.exports = {
-    name: "remove",
-    description: "Removes the track provided",
+    name: "move",
+    description: "Moves the track provided to the top or if specified, other position",
     type: 'CHAT_INPUT',
     permissions: "",
     cooldown: 5,
     options: [
         { name: "track", description: "The number of the track to remove", type: "INTEGER", required: true, },
+        { name: "new-position", description: "The new position of the track", type: "INTEGER", required: false, },
     ],
     /**
      *
@@ -20,7 +21,6 @@ module.exports = {
         await interaction.deferReply()
         const queue = player.getQueue(interaction.guildId);
         
-
         if (!interaction.member.voice.channel) 
             return interaction.followUp({ embeds: [
                 new MessageEmbed()
@@ -43,7 +43,7 @@ module.exports = {
             ] })
 
         const trackIndex = interaction.options.getInteger('track') - 1
-
+        
         if(!queue.tracks[trackIndex]?.title)
             return interaction.followUp({ embeds: [
                 new MessageEmbed()
@@ -52,12 +52,19 @@ module.exports = {
             ] })
 
         const trackName = queue.tracks[trackIndex].title;
-        queue.remove(trackIndex);
+        const trackUrl = queue.tracks[trackIndex].url;
+        const track = queue.remove(trackIndex);
+        let newPosition = interaction.options.getInteger('new-position')
+
+        if(!newPosition) newPosition = 0
+        else newPosition -= 1
+        
+        queue.insert(track, newPosition);
 
         return interaction.followUp({ embeds: [
             new MessageEmbed()
                 .setColor("#3d35cc")
-                .setDescription(`✅ - Song **${trackName}** has been removed`)
+                .setDescription(`✅ - Moved **[${trackName}](${trackUrl})** to position **${newPosition + 1}**`)
         ] })
     },
 };

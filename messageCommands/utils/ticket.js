@@ -40,6 +40,7 @@ module.exports = {
                 if (interaction.customId === "tic") {
                     const ticChannel = await interaction.guild.channels.create(`ticket-${interaction.user.id}`, {
                         type: "GUILD_TEXT",
+                        //parent : '756890395392081985',
                         permissionOverwrites: [
                             {
                                 id: interaction.guild.id,
@@ -83,7 +84,8 @@ module.exports = {
                                     .setDescription(`Your ticket has successfully been created at ${ticChannel}`)
                             ], 
                             ephemeral: true 
-                        })).catch(err => console.log(err))
+                        }))
+                        .catch(err => console.log(err))
                     } catch (err) {
                         console.log(err)
                     }

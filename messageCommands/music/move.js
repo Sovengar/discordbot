@@ -2,10 +2,10 @@ const player = require("../../client/discordMusicPlayer")
 const { Client, Message, MessageEmbed } = require('discord.js')
 
 module.exports = {
-    name: 'jump',
-    aliases: ["jump"],
-    description: "Jump to a specific track",
-    usage: '[track number]',
+    name: 'move',
+    aliases: ["move"],
+    description: "Moves the track provided to the top or if specified, other position",
+    usage: '<track position> [new position]',
     cooldown: 5,
     /**
      *
@@ -61,12 +61,28 @@ module.exports = {
             ] })
 
         const trackName = queue.tracks[trackIndex].title;
-        queue.jump(trackIndex);
+        const trackUrl = queue.tracks[trackIndex].url;
+        const track = queue.remove(trackIndex);
+        let newPosition
+
+        if(!args[1]) newPosition = 0
+        else {
+            if(isNaN(args[1])) 
+                return message.reply({ embeds: [
+                    new MessageEmbed()
+                        .setColor('#3d35cc')
+                        .setDescription(`‼️ - You didnt provide a number, provide the number to set the new position of the song in the queue!`)
+                ] })
+
+            newPosition = args[1] - 1
+        }
+
+        queue.insert(track, newPosition);
 
         return message.reply({ embeds: [
             new MessageEmbed()
                 .setColor("#3d35cc")
-                .setDescription(`⏭ | Song **${trackName}** has jumped the queue!`)
+                .setDescription(`✅ - Moved **[${trackName}](${trackUrl})** to position **${newPosition + 1}**`)
         ] })
     }
 }
