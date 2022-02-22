@@ -77,7 +77,7 @@ module.exports = {
         const components = (state) => [
             new MessageActionRow().addComponents(
                 new MessageSelectMenu()
-                    .setCustomId("help-menu")
+                    .setCustomId("help-menu-message")
                     .setPlaceholder('Please select a category')
                     .setDisabled(state)
                     .addOptions(categories.map((cmd) => {
@@ -108,6 +108,8 @@ module.exports = {
 
         let selectMenuInteraction
         collector.on('collect', (select_menu_interaction) => {
+            if (select_menu_interaction.customId !== "help-menu-message") return
+
             let [directory] = select_menu_interaction.values;
             const category = categories.find( (x) => x.directory.toLowerCase() === directory);
             directory = directory.charAt(0).toUpperCase() + directory.slice(1);

@@ -25,20 +25,20 @@ module.exports = {
                     .setDescription("‼ - Please provide a valid option between `add`, `remove` or `balance`!")
             ]})
         
-        let member = getMember(client, message, args[1]) || getMember(client, message, args[2])
-        if(!member) return message.reply("Invalid member!")
-
-        Money.findOne({ memberId: member.id }, async (err, data) => {
+        Money.findOne({ guild_id: message.guild.id }, async (err, data) => {
             if (err) throw err
             
             if(!data){
-                data = new Money({ memberId: member.id })
+                data = new Money({ 
+                    guild_id: message.guild.id, 
+                    memberId: member.id 
+                })
                 data.save().catch(err => console.log(err))
-			} 
+			}
             
             if(args[0] === 'balance'){
-                let member = getMember(client, message, args[1])
-                if(!member) return message.reply("Invalid member!")
+                const member = getMember(client, message, args[1])
+                if(!member) return message.reply("Member either invalid or not provided, check `help money` for more detailed info")
 
                 const userBalance = (id) => new Promise(async ful => {
                     if (!data) return ful(0)
@@ -49,23 +49,24 @@ module.exports = {
             }
 
             else if(args[0] === 'add'){
-                let member = getMember(client, message, args[2])
-                if(!member) return message.reply("Invalid member!")
-
                 const coinsAdd = args[1]
-                if (!coinsAdd) return message.reply("Mention the amount of coins!")
+                if (!coinsAdd) return message.reply("Mention the amount of coins, check `help money` for more detailed info")
                 if (isNaN(coinsAdd)) return message.reply("Coins amount must be an integer!")
+
+                const member = getMember(client, message, args[2])
+                if(!member) return message.reply("Member either invalid or not provided, check `help money` for more detailed info")
+                
                 data.memberCoins += parseInt(coinsAdd)
                 message.reply({ content: `${message.author} has added \`${coinsAdd} Coins\` to ${member}'s Account'` })
             }
 
             else if(args[0] === 'remove'){
-                let member = getMember(client, message, args[2])
-                if(!member) return message.reply("Invalid member!")
-
                 coinsRmv = args[1]
-                if (!coinsRmv) return message.reply("Mention the amount of coins!")
+                if (!coinsRmv) return message.reply("Mention the amount of coins, check `help money` for more detailed info")
                 if (isNaN(coinsRmv)) return message.reply("Coins amount must be an integer!")
+
+                const member = getMember(client, message, args[2])
+                if(!member) return message.reply("Member either invalid or not provided, check `help money` for more detailed info")
 
                 const userBalance = (id) => new Promise(async ful => {
                     if (!data) return ful(0)

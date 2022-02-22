@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 
 module.exports = {
     name: "gif",
-    description: "Returns a gif",
+    description: "Shows a gif based on the argument provided else gets a random gif",
     type: 'CHAT_INPUT',
     usage: "[keyword] \nExample 1: command \nExample 2: command dogs",
     cooldown: 5,

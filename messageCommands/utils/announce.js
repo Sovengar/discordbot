@@ -3,8 +3,8 @@ const { Message, Client, MessageEmbed } = require("discord.js");
 module.exports = {
     name: "announce",
     aliases: ["anc"],
-    description: "Creates an announcement",
-    usage: '<channel> <Announcement>\nExample: command #general hello -ping',
+    description: "Creates an announcement on a channel, optionally to a role or @everyone",
+    usage: '<channel> <Announcement> [role] \nExample 1: command #general hello \nExample 2: command #channel hello @everyone/@mods',
     cooldown: 5,
     userPermissions: ["MANAGE_GUILD",],
     botPermissions: ["MANAGE_GUILD",],
@@ -15,33 +15,38 @@ module.exports = {
      * @param {String[]} args
     */
     run: async (client, message, args) => {
-        let mention
+        let anc, auxArgs = [...args]
 
-        let channelAux = args.shift()
-        const channel = message.mentions.channels.first() || message.guild.channels.cache.get(channelAux)
-        if (!channel) return message.reply("Please provide a channel where you wanna send the announcement!")
+        let channel = message.mentions.channels.first() || message.guild.channels.cache.get(args[0])
+        if (!channel) return message.reply("Channel either missing or invalid, check `help announce`")
+        if(channel.type === 'GUILD_VOICE') return message.reply("You provided a voice channel, check `help announce`")
 
-        let anc = args.join(" ") //args.slice(1).join(" ")
+        const role = message.mentions.roles.first()
+        const everyone = auxArgs.pop().toString()
+
+        if(role) {
+            anc = args.slice(0, -1).slice(1).join(" ")
+            channel.send(`${role}`)
+        } 
+
+        else if(everyone === '@everyone'){
+            anc = args.slice(0, -1).slice(1).join(" ")
+            channel.send(`@everyone`)
+        }
+        
+        else {
+            anc = args.slice(1).join(" ")
+        }
+
         if (!anc) return message.reply("Please provide what to announce!")
 
-        //If announcement ends with -ping adds an @everyone on the message.
-        if (args.some((val) => val.toLowerCase() === "-ping")) {
-            for (let i = 0; i < args.length; i++) {
-                if (args[i].toLowerCase() === '-ping') args.splice(i, 1)
-            }
-            mention = true
-        } else mention = false
-        
-        if (mention === true) 
-            channel.send('@everyone')
-        
         const image = message.attachments.first() ? message.attachments.first().proxyURL : null
 
         const ancEmbed = new MessageEmbed()
             .setColor("RED")
             .setAuthor({ name: `${message.author.tag}`, iconURL: message.author.displayAvatarURL({ dynamic: true }), url: '' })
             .setTitle("NEW ANNOUNCEMENT")
-            .setDescription(args.slice(1).join(" "))
+            .setDescription(anc)
             .setImage(image)
             .setTimestamp()
 
@@ -54,12 +59,3 @@ module.exports = {
             .catch(err => { throw err})
     },
 };
-
-//If announcement ends with -ping adds an @everyone on the message.
-/*
-if(anc.includes('-ping')){
-    args.pop()
-    anc = args
-    channel.send('@everyone')
-}
-*/

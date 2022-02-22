@@ -4,7 +4,7 @@ const moment = require('moment');
 
 module.exports = { name: "afk", };
 
-client.on("messageCreate", (message) => {
+client.on("messageCreate", async (message) => {
     if(!message.guild || message.author.bot) return;
 
     const mentionedMember = message.mentions.members.first();
@@ -14,9 +14,10 @@ client.on("messageCreate", (message) => {
 
         const [ timestamp, reason] = data;
         const timeAgo = moment(timestamp).fromNow();
-        message.reply(`${mentionedMember} is currently afk (${timeAgo})\nReason: ${reason}`);  
+        message.reply(`${mentionedMember.displayName} is currently afk (${timeAgo})\nReason: ${reason}`);  
     }
 
+    //CHECKING IF MESSAGE IS FROM THE USER AFK TO REMOVE THE AFK STATUS
     const getData = afk.get(message.author.id);
     if(!getData) return;
     afk.delete(message.author.id);

@@ -30,13 +30,13 @@ module.exports = {
         if (!isMemberOnVC) return message.reply(`${member} is not on a voice channel!`)
 
         if(args[0]?.toLowerCase() === 'on') {
-            member.voice.setMute(true)
-            message.reply(`${member} has been muted!`) 
+            member.voice.setDeaf(true)
+            message.reply(`${member} has been deafened!`) 
         }
 
         else if(args[0]?.toLowerCase() === 'off') {
-            member.voice.setMute(false)
-            message.reply(`${member} has been unmuted!`) 
+            member.voice.setDeaf(false)
+            message.reply(`${member} has been undeafened!`) 
         }
     },
 };

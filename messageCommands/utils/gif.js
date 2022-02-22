@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 module.exports = {
     name: "gif",
     aliases: ['gif'],
-    description: "Shows a gif",
+    description: "Shows a gif based on the argument provided else gets a random gif",
     usage: "[keyword] \nExample 1: command \nExample 2: command dogs",
     cooldown: 5,
     userPermissions: [,],

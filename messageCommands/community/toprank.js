@@ -18,22 +18,34 @@ module.exports = {
      * @param {String[]} args
     */
     run: async (client, message, args) => {
-        const guildSettings = await GuildSettings.findOne({ guild_id: message.guild.id });
-        if(!guildSettings) return;
+        GuildSettings.findOne({ guild_id: message.guild.id }, async (err, data) => {
+			if (err) {
+				console.log(err);
+				return message.reply("An error occurred while trying to load the rank!");
+			}
 
-        const rawLeaderboard = await Levels.fetchLeaderboard(message.guild.id, 10)
-        if (rawLeaderboard.length < 1) return message.reply("Nobody's in the leaderboard yet!")
+			if (!data) {
+                data = new GuildSettings({
+                    guild_id: message.guild.id,
+                    prefix: process.env.PREFIX,
+                })
+                data.save().catch(err => console.log(err))
+			} 
+            
+            const rawLeaderboard = await Levels.fetchLeaderboard(message.guild.id, 10)
+            if (rawLeaderboard.length < 1) return message.reply("Nobody's in the leaderboard yet!")
 
-        const leaderboard = await Levels.computeLeaderboard(client, rawLeaderboard, true)
-        const lb = leaderboard.map(e => `\`${e.position}\` | ${e.username}#${e.discriminator} | **${e.level}** Level | **${e.xp.toLocaleString()}** XP`).join("\n")
+            const leaderboard = await Levels.computeLeaderboard(client, rawLeaderboard, true)
+            const lb = leaderboard.map(e => `\`${e.position}\` | ${e.username}#${e.discriminator} | **${e.level}** Level | **${e.xp.toLocaleString()}** XP`).join("\n")
 
-        const lbEmbed = new MessageEmbed()
-            .setColor("RED")
-            .setTitle(`Ranking Leaderboard of ${message.guild.name}`)
-            .setThumbnail(message.guild.iconURL({ dynamic: true }))
-            .setDescription(`${lb}`)
-            .setTimestamp()
-
-        message.reply({ embeds: [lbEmbed] })
+            message.reply({ embeds: [
+                new MessageEmbed()
+                    .setColor("RED")
+                    .setTitle(`Ranking Leaderboard of ${message.guild.name}`)
+                    .setThumbnail(message.guild.iconURL({ dynamic: true }))
+                    .setDescription(`${lb}`)
+                    .setTimestamp()
+            ] })
+		})
     },
 };

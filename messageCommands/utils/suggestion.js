@@ -16,13 +16,32 @@ module.exports = {
      * @param {String[]} args
     */
     run: async (client, message, args) => {
-        const guildSettings = await GuildSettings.findOne({ guild_id: message.guild.id })
-        if(!guildSettings) return //TODO SI NO HAY GUILD TENEMOS QUE CREAR Y AVISAR
-        if(!guildSettings.allowSuggestion) return message.reply("Suggestion are currently disabled!")
-        if (!guildSettings.suggestionChannelId) return message.reply("Suggestion Channel is not set yet!")
-
         const query = args.join(" ")
         if (!query) return message.reply("State your suggestion please!")
+        
+        const guildSettings = GuildSettings.findOne({ guild_id: message.guild.id }, (err, data) => {
+			if (err) {
+				console.log(err);
+				return message.reply("An error occurred while trying to set the auto role feature!");
+			}
+
+			if (!data) {
+                data = new GuildSettings({
+                    guild_id: message.guild.id,
+                    prefix: process.env.PREFIX,
+                })
+			} 
+            
+            data.save(err => {
+				if (err) {
+					console.log(err);
+					return message.reply("An error occurred while trying to set the auto role feature!");
+				}
+			})
+		})
+
+        if(!guildSettings.allowSuggestion) return message.reply("Suggestions are currently disabled, ask an admin!")
+        if (!guildSettings.suggestionChannelId) return message.reply("Suggestion Channel is not set yet, ask an admin!")
 
         const image = message.attachments.first() ? message.attachments.first().proxyURL : null
 

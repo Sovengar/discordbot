@@ -24,11 +24,13 @@ module.exports = {
             ]})
 
         const channel =  message.mentions.channels.first() || message.member.guild.channels.cache.get(args[1])
-        if(!channel || channel?.type === 'GUILD_VOICE') return message.reply("Provide a valid channel");
+        if(!channel) return message.reply("Channel either invalid or not provided, check `help slowmode` for detailed info!")
+        if(channel?.type === 'GUILD_VOICE') return message.reply("You provided a voice channel")
 
         if(args[0]?.toLowerCase() === 'on'){
+            if(!args[2]) return message.reply("Provide the time between messages, check `help slowmode` for more info.");
             const milliseconds = ms(args[2]);
-            if(!milliseconds) return message.reply("Provide the time between messages, check `help slowmode` for more info.");
+            if(!milliseconds) return message.reply("This is not a valid time, check `help slowmode` for more info.");
             if(isNaN(milliseconds)) return message.reply("This is not a valid time, check `help slowmode` for more info.");
             if(milliseconds < 1000) return message.reply("The minimun slowmode is 1 second!");
 

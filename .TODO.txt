@@ -24,15 +24,22 @@ poll show  ?poll poll show [message ID/link]
 MEJORAR:
 Interaction commands, toca actualizarlos en base a los cambios en messageCommands.
 Interaction commands, toca actualizarlos en base al deferReply. 
-
-Alojar el bot
+añadir slowmode para todos los canales
+mute voice para los que tengan cierto rol
 
 Revisar para que no salga el application command 2 veces.
 the first one you're seeing is the data created from Single Guild Slash Command, and the second you're seeing is from Multi-Guild one. So once you host the bot for Multi-Guild, people won't see 2 commands, there will be only one command. I also advice to use Single Guild for Testing purposes.
 
 Testear setup y music
+Testear muted y deafened roles
 
 message.channel.awaitMessages(response => response.content === "test",
+
+
+mute voice text
+lockdown channel server
+
+
 
 
 PERMISOS:
@@ -40,6 +47,16 @@ Los permisos para interaction commands se gestionan con .permissions ya que no v
 *Desde los ficheros interaction Handler y interaction event.
 Los permisos para message commands se gestionan con user y bot permissions.
 *Desde el fichero message event.
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -64,10 +81,10 @@ Seleccion multiple todas =>             Ctrl + Shift + L.
 Copiar linea a linea =>                 Ctrl+C con el cursor en la linea.
 Cortar linea a linea =>                 Ctrl+X con el cursor en la linea.
 
-Comentar y descomentar =>               Ctrl + ç.
+Comentar y descomentar =>               Ctrl + / or Ctrl + ç.
 Mover una linea =>                      Alt + Up/Down arrow.
 Destabular =>                           Shift+Tab.
-Multiple cursors =>                      Alt+Click
+Multiple cursors =>                     Alt+Click
 
 
 
@@ -123,45 +140,3 @@ total += total + offer
 --------------------------
 ....
 const total = aux + disccount + offer
-
-
-
-
-
-
-rank y toprank no hacen nada si no hay db.
-money no indica bien que argumentos necesita cuando no hay member.
-
-slowmode sin parametros te dice provide a valid channel.
-y no handleo si no provee time ni le digo que lo haga
-añadir slowmode para todos los canales?
-
-create ticket button me deja que le clickee yo, deberia ser invisible para mi
-
-help deja que otra persona lo edite
-
-suggestion no va si no hay bd, si esta off que diga como ponerlo on
-
-
-
-mute voice para los que tengan cierto rol
-channel.createOverwrite is not a function
-
-
-
-!annouce PENE
-!announce pene
-C Bot
-BOT
- — Today at 2:01 AM
-Please provide a channel where you wanna send the announcement!
-
-No deberia dejarte crearlo sin texto 
-pon que sea !announcement bot-commands @everyone o /@rol "mensaje"
-
-
-mejora gif porque no te dice que se pueden usar parametros.
-
-
-
-afk deberia borrar el mention que me hace

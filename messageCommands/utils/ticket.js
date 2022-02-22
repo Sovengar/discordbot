@@ -30,5 +30,65 @@ module.exports = {
         )
 
         message.channel.send({ embeds: [tktEmbed], components: [bt] })
+
+        const filter = i => i.customId === 'tic' && i.user.id === message.author.id;
+        const collector = message.channel.createMessageComponentCollector({ filter, time: 10000 });
+
+        collector.on('collect', async interaction => {
+            if (interaction.isButton()) {
+                await interaction.deferUpdate()
+                if (interaction.customId === "tic") {
+                    const ticChannel = await interaction.guild.channels.create(`ticket-${interaction.user.id}`, {
+                        type: "GUILD_TEXT",
+                        permissionOverwrites: [
+                            {
+                                id: interaction.guild.id,
+                                deny: ["VIEW_CHANNEL"],
+                            },
+                            {
+                                id: interaction.user.id,
+                                allow: ["VIEW_CHANNEL", "SEND_MESSAGES", "ATTACH_FILES", "EMBED_LINKS", "ADD_REACTIONS"]
+                            },
+                            {
+                                id: client.user.id,
+                                allow: ["VIEW_CHANNEL", "SEND_MESSAGES", "ATTACH_FILES", "EMBED_LINKS", "ADD_REACTIONS"]
+                            }
+                        ]
+                    })
+        
+                    //TRY TO SEND THE MESSAGE
+                    try {
+                        await ticChannel.send({ 
+                            content: `Welcome ${interaction.user}`, 
+                            embeds: [
+                                new MessageEmbed()
+                                    .setColor("RED")
+                                    .setTitle("Ticket")
+                                    .setDescription("Hello there,\nThe staff will be here as soon as possible, mean-while tell us about your issue!\nThank You!")
+                                    .setTimestamp()
+                                    .setAuthor({ name: `${interaction.guild.name}`, iconURL: interaction.guild.iconURL({ dynamic: true }), url: '' })
+                            ], 
+                            components: [
+                                new MessageActionRow().addComponents(
+                                    new MessageButton()
+                                        .setCustomId("delticket")
+                                        .setLabel("🚮 Delete Ticket")
+                                        .setStyle("DANGER")
+                                )] 
+                        })
+                        .then(interaction.followUp({ 
+                            embeds: [
+                                new MessageEmbed()
+                                    .setColor("RED")
+                                    .setDescription(`Your ticket has successfully been created at ${ticChannel}`)
+                            ], 
+                            ephemeral: true 
+                        })).catch(err => console.log(err))
+                    } catch (err) {
+                        console.log(err)
+                    }
+                }
+            } 
+        });
     },
 };
