@@ -48,21 +48,32 @@ On OAuth2, go to URL Generator, tick `bot`, `applications.commands`, `Administra
 To start using the bot, you either need to type npm start or npm run dev for auto-reload on changes.
  `client_id` and `client_secret` which you get from creating an application on the [Discord developers site](https://discord.com/developers/applications). 
 
-Using native NodeJS:
-```js
-const TwitchApi = require("node-twitch").default;
-
-const twitch = new TwitchApi({
-	client_id: "YOUR_CLIENT_ID",
-	client_secret: "YOUR_CLIENT_SECRET"
-});
-```
 ## Documentation
 
 ### Workflow
 The program starts, node reads package.json to know which file has to execute, in this case index.js
 index.js is our entry point, from here we require the bot created on [Discord developers site](https://discord.com/developers/applications)
 Requiring the bot (./client/discordBot) starts creating the bot itself through the variable client, loads necessary dependencies and executes the handlers.
+
+```js
+///CREATING THE CLIENT - BOT
+const client = new Client({
+    intents: 32767, //Import all intents
+    allowedMentions: {
+        parse: ['everyone', 'roles', 'users'],
+        repliedUser: true, //False = Dont ping the user
+    }
+});
+
+///... some code
+
+/// Getting the handlers to HANDLE the DB, errors, commands, slashcommands, contextMenu
+['interactionCommand_handler', 'mongo_handler', 'error_handler', 
+'event_handler', 'messageCommand_handler', 'noPrefixCommands'].forEach(handler => {
+    require(`../handlers/${handler}`)(client, Ascii)
+})
+```
+
 The handlers job in essence except from error and mongo handler is to get the data from the files to variables.
 The error handler job is to get any critical error and avoid the stop of the process furthermore printing info.
 The mongo handler job is to try to connect with the DB if has one.
