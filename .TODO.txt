@@ -24,11 +24,3 @@ Testear setup y music
 Testear muted y deafened roles
 
 message.channel.awaitMessages(response => response.content === "test",
-
-PERMISOS:
-Los permisos para i commands se gestionan para la interfaz aunque tmb se puede para cuando se escribe el comando.
-*Para gestionarlo cuando se escribe se haria similar a message event pero prefiero hacerlo desde la interfaz.
-*Por tanto, para gestionarlo desde la interfaz se gestiona en el handler. Aunque tmb un poco desde el otro por si acaso.
-
-Los permisos para message commands se gestionan con user y bot permissions.
-*Desde el fichero message event.
