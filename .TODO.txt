@@ -9,12 +9,14 @@ poll Start a poll (max 5 choices)
 poll show  ?poll poll show [message ID/link]
 
 MEJORAR:
+tictactoe no funciona
 mute voice text //mute voice para los que tengan cierto rol
 lockdown channel server
 slowmode para todos los canales
 
 Interaction commands, toca actualizarlos en base a los cambios en messageCommands.
 Interaction commands, toca actualizarlos en base al deferReply. 
+Añadirle channelType
 
 Revisar para que no salga el application command 2 veces.
 the first one you're seeing is the data created from Single Guild Slash Command, and the second you're seeing is from Multi-Guild one. So once you host the bot for Multi-Guild, people won't see 2 commands, there will be only one command. I also advice to use Single Guild for Testing purposes.
