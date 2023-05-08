@@ -17,7 +17,7 @@
         "ascii-table": "^0.0.9",
         "atob": "^2.1.2",
         "axios": "^0.23.0",
-        "canvacord": "^5.2.3",
+        "canvacord": "^5.4.8",
         "cpu-stat": "^2.0.1",
         "discord-backup": "^3.0.1",
         "discord-canvas": "^1.4.1",
